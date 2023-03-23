@@ -19,3 +19,21 @@ def create(request):
         form.save()
         return redirect('appointment_list')
     return render(request, 'appointments/form.html', {'form': form})
+
+
+def update(request, pk):
+    appointment = get_object_or_404(Appointment, pk=pk)
+    form = AppointmentForm(request.POST or None, instace=appointment)
+    if form.is_valid():
+        form.save()
+        return redirect('appointment_list')
+    return render(request, 'appointments/form.html', {'form': form})
+
+
+def delete(request, pk):
+    appointment = get_object_or_404(Appointment, pk=pk)
+    if request.method == 'POST':
+        appointment.delete()
+        return redirect('appointment_list')
+    return render(request, 'appointments/appointment_delete.html')
+
