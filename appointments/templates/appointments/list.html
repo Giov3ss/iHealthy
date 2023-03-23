@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Appointment List</h1>
+    <a href="{% url 'appointment_create'%}">Create Appointment</a>
     <ul>
         {% for appointment in appointments %}
             <li><a href="{% url 'detail' pk=appointment.pk %}">{{ appoinment.title}}</a></li>
