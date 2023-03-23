@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Appointment List</h1>
+    <ul>
+        {% for appointment in appointments %}
+            <li><a href="{% url 'detail' pk=appointment.pk %}">{{ appoinment.title}}</a></li>
+        {% empty %}
+            <li>No appointment found.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
