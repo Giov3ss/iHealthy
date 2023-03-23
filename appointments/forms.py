@@ -5,4 +5,10 @@ from .models import Appointment
 class AppointmentForm(forms.ModelForm):
     class Meta:
         model = Appointment
-        fields = ['name']
+        fields = [
+            'user',
+            'date',
+            'time',
+            'location',
+            'reason',
+        ]
