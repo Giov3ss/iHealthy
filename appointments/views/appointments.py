@@ -18,7 +18,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('appointment_list')
-    return render(request, 'appointments/form.html', {'form': form})
+    return render(request, 'appointments/form.html', {'form': form, 'title': 'create'})  # noqa
 
 
 def update(request, pk):
@@ -27,7 +27,7 @@ def update(request, pk):
     if form.is_valid():
         form.save()
         return redirect('appointment_list')
-    return render(request, 'appointments/form.html', {'form': form})
+    return render(request, 'appointments/form.html', {'form': form, 'title': 'update'})  # noqa
 
 
 def delete(request, pk):
