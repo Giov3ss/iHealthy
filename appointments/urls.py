@@ -4,7 +4,7 @@ from .views import appointments
 urlpatterns = [
     path('', appointments.list, name='home'),
     path('list/', appointments.list, name='appointment_list'),
-    path('appointments/<int:pk>/', appointments.detail, name='detail'),
+    path('appointments/<int:pk>/', appointments.detail, name='appointment_detail'),  # noqa
     path('create/', appointments.create, name='appointment_create'),
     path('update/<int:pk>', appointments.update, name='appointment_update'),
     path('delete/<int:pk>', appointments.delete, name='appointment_delete'),
