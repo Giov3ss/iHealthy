@@ -28,7 +28,12 @@ def create(request):
 @login_required
 def update(request, pk):
     appointment = get_object_or_404(Appointment, pk=pk)
-    form = AppointmentForm(request.POST or None, instace=appointment)
+    form = AppointmentForm(
+        request.user.id,
+        
+        request.POST or None,
+        instance=appointment
+        )
     if form.is_valid():
         form.save()
         return redirect('appointment_list')
