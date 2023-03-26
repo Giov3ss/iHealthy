@@ -5,7 +5,7 @@
     <a href="{% url 'appointment_create'%}">Create Appointment</a>
     <ul>
         {% for appointment in appointments %}
-            <li><a href="{% url 'detail' pk=appointment.pk %}">{{ appoinment.title}}</a></li>
+            <li><a href="{% url 'detail' pk=appointment.pk %}">{{ appointment }}</a></li>
         {% empty %}
             <li>No appointment found.</li>
         {% endfor %}

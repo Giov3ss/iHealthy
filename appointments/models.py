@@ -22,4 +22,4 @@ class Appointment(models.Model):
     )
 
     def __str__(self):
-        return f'{self.user.name} - {self.date} - {self.time}'
+        return f'{self.date} - {self.time}'
