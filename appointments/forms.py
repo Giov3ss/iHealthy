@@ -5,11 +5,14 @@ from django.contrib.auth.models import User
 
 class AppointmentForm(forms.ModelForm):
 
-    def __init__(self, *args, **kwargs):
-        user = kwargs.pop('user')
+    def __init__(self, user_id, *args, **kwargs):
+        self.user_id = user_id
         super(AppointmentForm, self).__init__(*args, **kwargs)
-        self.fields['user'] = forms.ModelChoiceField(queryset=User.objects.filter(id=user.id))  # noqa
-        
+
+    def clean(self):
+        super().clean()
+        self.instance.user_id = self.user_id
+
     class Meta:
         model = Appointment
         fields = [
@@ -17,7 +20,6 @@ class AppointmentForm(forms.ModelForm):
             'time',
             'location',
             'reason',
-            'user'
         ]
 
         widgets = {

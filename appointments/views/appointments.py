@@ -18,7 +18,7 @@ def detail(request, pk):
 
 @login_required
 def create(request):
-    form = AppointmentForm(request.POST or None, user=request.user)
+    form = AppointmentForm(request.user.id, request.POST or None)
     if form.is_valid():
         form.save()
         return redirect('appointment_list')
