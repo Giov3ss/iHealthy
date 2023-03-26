@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def list(request):
-    appointments = Appointment.objects.all()
+    appointments = Appointment.objects.filter(user_id=request.user.id)
     return render(request, 'appointments/list.html', {'appointments': appointments})  # noqa
 
 
