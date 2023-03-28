@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import appointments
+from .views import appointments, homepage
+
 
 urlpatterns = [
-    path('', appointments.list, name='home'),
+    path('', homepage.HomePageView.as_view(), name='home'),
     path('list/', appointments.list, name='appointment_list'),
     path('appointments/<int:pk>/', appointments.detail, name='appointment_detail'),  # noqa
     path('create/', appointments.create, name='appointment_create'),
