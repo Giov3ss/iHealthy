@@ -18,7 +18,7 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .dark-bg {
@@ -34,57 +34,41 @@ body {
     background-color: transparent;
 }
 
-.image-container {
-    position: relative;
+/*my css*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.author {
+.bg-image {
+    background-image: url("/static/images/hero-image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    margin: 4px;
-    text-transform: uppercase;
 }
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+.btn-secondary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
+
 
 .post-link {
     text-decoration: none;
