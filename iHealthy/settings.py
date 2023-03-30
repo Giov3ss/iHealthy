@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     'whitenoise.runserver_nostatic',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -141,15 +143,23 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu92.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu93.gitpod.io']  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu92.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu93.gitpod.io']
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
