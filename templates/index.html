@@ -6,15 +6,24 @@
 
 {% load static %}
 
-<div class="container-fluid bg-image text-center text-right"
-style="background-image: url(https://res.cloudinary.com/dy2i4yita/image/upload/v1680294530/hero-image3_xud7ce.jpg);
+<style>
+    .container-fluid h1 {
+        text-align: left;
+    }
+</style>
+
+<div class="container-fluid"
+style="background-image: url(https://res.cloudinary.com/dy2i4yita/image/upload/v1680557886/hero11_lquqaj.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 color: rgb(6, 6, 6);
-height: 450px;">
-    <h1 class="text-center">Welcome to iHealhty Nutricionist</h1>
-    <p class="lead text-center mt-5 font-weight-normal">Your go-to destination for personalized and evidence-based nutrition counseling.</p>
+padding: 10%;">
+    <h1 class="font-weight-semibold">Welcome to iHealthy.</h1>
+</div>
+
+<div class="container text-center mt-4">
+    <p class="lead text-center font-weight-normal">Your go-to destination for personalized and evidence-based nutrition counseling.</p>
     <p class="lead text-center">Whether you're looking to lose weight, weight gain, manage a chronic condition or optimize
         your
         health and wellness,
@@ -28,7 +37,6 @@ height: 450px;">
         {% else %}
         <a href="{% url 'account_signup' %}" class="btn btn-outline-primary">Book Now</a>
         {% endif %}
-    </div>
 </div>
 
 <div class="container">
@@ -52,5 +60,6 @@ height: 450px;">
         </div>
     </div>
 </div>
+
 
 {%endblock%}
