@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1> Delete Appointment </h1>
-    <p> Are you sure you want to delete? </p>
-    <form method="POST">
-        {% csrf_token %}
-        <input type="submit" value="Yes, delete">
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Delete Appointment</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> Are you sure you want to delete your appointment?</p>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input type="submit" class="btn btn-danger" value="Yes, delete">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
