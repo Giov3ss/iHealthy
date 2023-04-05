@@ -13,6 +13,8 @@ class Appointment(models.Model):
         weight_loss = 'WL', _('Weight Loss')
         weight_gain = 'WG', _('Weight Gain')
         better_healthy = 'BH', _('Better Healthy')
+        meal_plan = 'MP', _('Meal Planing')
+        nutrition_education = 'NE', _('Nutrition Education')
         other = 'OT', _('Other')
 
     reason = models.CharField(
