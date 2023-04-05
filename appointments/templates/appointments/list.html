@@ -4,11 +4,11 @@
 
 
 <div class="d-flex aligns-items-center justify-content-center">
-    <div class="card" style="width: 30rem;">
+    <div class="card mt-4" style="width: 30rem;">
         <div class="card-header">
             <h1>Appointment List</h1>
         </div>
-        <ul class="list-group list-group-flush">
+        <ul class="list-group list-group-flush list-unstyled">
             {% for appointment in appointments %}
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 {{ appointment }}
@@ -26,7 +26,7 @@
                 </div>
             </li>
             {% empty %}
-            <li>No appointment found.</li>
+            <li class="text-center">No appointment found.</li>
             {% endfor %}
         </ul>
         <div class="card-footer">
