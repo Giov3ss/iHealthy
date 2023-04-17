@@ -9,10 +9,6 @@ body {
     color: #fafafd;   
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -31,7 +27,6 @@ body {
 }
 
 .card {
-    border: none;
     background-color: transparent;
 }
 
@@ -41,6 +36,20 @@ body {
     margin: 0 auto;
     padding: 50px 0;
 }
+
+.bg-image {
+    background-image: url("https://res.cloudinary.com/dy2i4yita/image/upload/v1680557886/hero11_lquqaj.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(6, 6, 6);
+    padding: 10%;
+}
+
+.container-fluid h1 {
+    text-align: left;
+}
+
 
 .btn-primary {
     background-color: #007bff;
@@ -116,4 +125,9 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+
+.container-fluid span {
+    text-align: center;
 }
