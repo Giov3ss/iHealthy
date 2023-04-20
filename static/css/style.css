@@ -132,5 +132,23 @@ body {
     text-align: center;
 }
 
-/* member profile */
+@media screen and (max-width: 685px){ 
+    h1 {
+        display: table-caption;
+
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .card-columns {
+      column-count: 1;
+    }
+    
+    .card {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 90%;
+    }
+  }
+  
 
