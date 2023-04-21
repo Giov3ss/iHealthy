@@ -36,3 +36,6 @@
 * [Credits](#credtis)
 </details>
 <hr>
+
+## UX
+iHealthy is website wehere the user can make an appointment with our nutricionist, user can log in with their credential to book an appointment with our professionals
