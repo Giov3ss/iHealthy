@@ -18,11 +18,12 @@ class AppointmentForm(forms.ModelForm):
         fields = [
             'date',
             'time',
-            'location',
             'reason',
+            'nutricionist',
         ]
 
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
-            'time': forms.TimeInput(attrs={'type': 'time'})
+            'time': forms.TimeInput(attrs={'type': 'time'}),
+            'nutricionist': forms.Select(attrs={'class': 'form-select'}),
         }
