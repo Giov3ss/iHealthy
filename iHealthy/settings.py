@@ -141,7 +141,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu95.gitpod.io']  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu95.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu95.gitpod.io']  # noqa
 
 
 # Static files (CSS, JavaScript, Images)
