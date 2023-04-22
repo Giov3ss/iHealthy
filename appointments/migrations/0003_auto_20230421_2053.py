@@ -13,11 +13,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='appointment',
             name='nutricionist',
-            field=models.CharField(choices=[('Anna', 'Anna Smith'), ('John', 'John Doe')], default='Anna', max_length=4),
+            field=models.CharField(choices=[('Anna', 'Anna Smith'), ('John', 'John Doe')], default='Anna', max_length=4),  # noqa
         ),
         migrations.AlterField(
             model_name='appointment',
             name='reason',
-            field=models.CharField(choices=[('WL', 'Weight Loss'), ('WG', 'Weight Gain'), ('BH', 'Better Healthy'), ('MP', 'Meal Planing'), ('NE', 'Nutrition Education'), ('OT', 'Other')], default='WL', max_length=2),
+            field=models.CharField(choices=[('WL', 'Weight Loss'), ('WG', 'Weight Gain'), ('BH', 'Better Healthy'), ('MP', 'Meal Planing'), ('NE', 'Nutrition Education'), ('OT', 'Other')], default='WL', max_length=2),  # noqa
         ),
     ]

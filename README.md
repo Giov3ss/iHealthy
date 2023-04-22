@@ -4,6 +4,8 @@
 
 ## live site goes here
 
+This project is built using Django framework, along with PostgreSQL, Python, HTML, CSS and JavaScript. iHealthy is an appointment booking website that connects users with our professional nutritionists. With the ability to make, edit, and delete appointments, user can easily manage their schedules. This project has been developed for educational purposes.
+
 # Table of Contents
 <details>
 <summary>Table of Contents</summary>
@@ -38,4 +40,4 @@
 <hr>
 
 ## UX
-iHealthy is website wehere the user can make an appointment with our nutricionist, user can log in with their credential to book an appointment with our professionals
+iHealthy is a platform for booking appointments with nutritionist, it allows user to select from a variety of reasons for their appointment, such as weight loss, weight gain, better healthy, meal planning, nutrition education or other. The site is designed to be easy to navigate, with a clear and simple layout. iHealthy offers a user-friendly appointment booking system that allows users to easily book appointments with their preferred nutritionist. User can easily register or loign to their account and access the appointment booking form with just a few clicks. The design features a light blue and white color scheme, creating a clean and inviting look.
