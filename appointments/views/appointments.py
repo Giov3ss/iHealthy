@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from ..models import Appointment
 from ..forms import AppointmentForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 @login_required
@@ -30,21 +31,34 @@ def update(request, pk):
     appointment = get_object_or_404(Appointment, pk=pk)
     form = AppointmentForm(
         request.user.id,
-        
         request.POST or None,
         instance=appointment
         )
-    if form.is_valid():
-        form.save()
-        return redirect('appointment_list')
-    return render(request, 'appointments/form.html', {'form': form, 'title': 'update'})  # noqa
+    if appointment.user.id == request.user.id:
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Appointment updated successfully!')
+            return redirect('appointment_list')
+        return render(request, 'appointments/form.html', {'form': form, 'title': 'update'})  # noqa
+    else:
+        # message user and send them to error page
+        message.warning(request, 'You can only update you own appointments!')
+        return render(request, 'errors/403.html')
 
 
 @login_required
 def delete(request, pk):
     appointment = get_object_or_404(Appointment, pk=pk)
+    # making sure if the user owns the appointment before they can update it 
+    if appointment.user.id != request.user.id:
+        # message user and send them to error page
+        message.warning(request, 'You can only delete your own appointments!')
+        return render(request, 'errors/403.html')
+
     if request.method == 'POST':
         appointment.delete()
+        messages.success(request, 'Appointment deleted successfully!')
         return redirect('appointment_list')
+    
     return render(request, 'appointments/appointment_delete.html')
 
