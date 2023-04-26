@@ -44,7 +44,7 @@ def update(request, pk):
     else:
         # message user and send them to error page
         message.warning(request, 'You can only update you own appointments!')
-        return render(request, 'errors/403.html')
+        return render(request, '403.html')
 
 
 @login_required
@@ -54,7 +54,7 @@ def delete(request, pk):
     if appointment.user.id != request.user.id:
         # message user and send them to error page
         message.warning(request, 'You can only delete your own appointments!')
-        return render(request, 'errors/403.html')
+        return render(request, '403.html')
 
     if request.method == 'POST':
         appointment.delete()
@@ -62,15 +62,3 @@ def delete(request, pk):
         return redirect('appointment_list')
     
     return render(request, 'appointments/appointment_delete.html')
-
-
-class Page403(TemplateView):
-    template_name = 'errors/403.html'
-
-
-class Page404(TemplateView):
-    template_name = 'errors/404.html'
-
-
-class Page500(TemplateView):
-    template_name = 'errors/500.html'
