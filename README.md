@@ -55,6 +55,7 @@ iHealthy is for anyone who is interested in improving their health and nutrition
 ### Design Choices
 - ### Colors
 <img width="951" alt="image" src="https://user-images.githubusercontent.com/112728772/235238056-ab23dafc-1325-46be-8f86-86335cd508e6.png">
+All the colors is designed to create a calming and inviting atmosphere for users of the iHealthy. The soft shades of gray and white provide a clean and minimalist backdrop for the more vibrant and green and tan colors, which symbolize growth, health and balance.
 
 ### Strategy
 The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
