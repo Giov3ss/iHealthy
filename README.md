@@ -18,8 +18,10 @@ Giovani Fonseca
     * [Design Choices](#design-choices)
         * [Colors](#colors)
         * [Typography](#typography)
+        * [Images](#images)
+        * [Frameworks](#frameworks)
+        * [Custom Javascript](#custom-javascript)
     * [Strategy](#strategy)
-* [Purpose](#purpose)
 * [User Stories](#user-stories)
 * [Agile Methodology](#agile-methodology)
     * [Canban board](#canban-board)
@@ -57,10 +59,19 @@ iHealthy is for anyone who is interested in improving their health and nutrition
 <img width="951" alt="image" src="https://user-images.githubusercontent.com/112728772/235238056-ab23dafc-1325-46be-8f86-86335cd508e6.png">
 All the colors is designed to create a calming and inviting atmosphere for users of the iHealthy. The soft shades of gray and white provide a clean and minimalist backdrop for the more vibrant and green and tan colors, which symbolize growth, health and balance.
 
-- ### Typograph
+- ### Typography
 <img width="1110" alt="image" src="https://user-images.githubusercontent.com/112728772/235248226-ec43c4aa-f1b4-46d1-b95f-8d4426510f2b.png">
-
+The font choice of Lato, sans-serif for my website is a good choice due to its readability on both desktop and mobile devices. For headers, I chose a larger font size to emphasize important information, while general text uses a smaller font size for easier reading. The font type and size choices tie into the user experience by making the website easy to read and navigate, which is important for user satisfaction.
 
 ### Strategy
 The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
 
+### Images
+Icons and images are an important part of website design as they can help convey information quickly and visually. I chose to use social icons such as Facebook, Twitter and Instagram to make it easy for users to connect with the business on their preferred social media platforms. The Hero image aligns with the theme of promoting healthy nutrition and crates an appealing visual representation of the services. The pictures of the nutricionists were included to give users a sense of familiarity and trust, as well as to introduce them to the team behind the business.
+
+### Frameworks
+I chose to use Bootstrap for my website because it allowed me to quickly and easily create a responsive design that works well on different devices. the pre-designed templates and components also helped me to save time in the development process.
+
+### Custom Javascript
+**** PUT THE CODE HERE *****
+This code is used to automatically remove alert messages from the DOM after a certain amout of time, improving the user experience by reducing clutter and distractions on the page. 
