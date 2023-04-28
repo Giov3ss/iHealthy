@@ -52,6 +52,10 @@ iHealthy is a platform for booking appointments with nutritionist, it allows use
 ### Target Audience
 iHealthy is for anyone who is interested in improving their health and nutrition, regardless of gender or age. This could include individuals looking to lose or gain weight, athletes seeking to optimize their performance through nutrition, people with specific health conditions or anyone simply looking to adopt a healthier lifestyle.
 
+### Design Choices
+- ### Colors
+<img width="951" alt="image" src="https://user-images.githubusercontent.com/112728772/235238056-ab23dafc-1325-46be-8f86-86335cd508e6.png">
 
 ### Strategy
 The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
+
