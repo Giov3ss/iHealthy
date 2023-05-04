@@ -22,6 +22,7 @@ Giovani Fonseca
         * [Frameworks](#frameworks)
         * [Custom Javascript](#custom-javascript)
     * [Strategy](#strategy)
+    * [Wireframes](#wireframes)
 * [User Stories](#user-stories)
 * [Agile Methodology](#agile-methodology)
     * [Canban board](#canban-board)
