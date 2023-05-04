@@ -5,6 +5,20 @@ from .models import Appointment
 from django.contrib.auth.models import User
 
 
+class DateInput(forms.DateInput):
+    """
+    This class gets the widget working to show a datepicker
+    """
+    input_type = 'date'
+
+
+class TimeInput(forms.TimeInput):
+    """
+    This class gets the widget working to show a datepicker
+    """
+    input_type = 'text'
+
+
 class AppointmentForm(forms.ModelForm):
 
     def __init__(self, user_id, *args, **kwargs):
@@ -33,7 +47,12 @@ class AppointmentForm(forms.ModelForm):
         ]
 
         widgets = {
-            'date': forms.DateInput(attrs={'type': 'date'}),
-            'time': forms.TimeInput(attrs={'type': 'time'}),
+            'date': DateInput(attrs={
+                'min': datetime.date.today() + datetime.timedelta(days=0),
+                'max': datetime.date.today() + datetime.timedelta(days=30)
+            }),
+            'time': TimeInput(attrs={
+                'class': 'timepicker'
+            }),
             'nutricionist': forms.Select(attrs={'class': 'form-select'}),
         }
