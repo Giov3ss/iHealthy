@@ -30,8 +30,8 @@ class AppointmentForm(forms.ModelForm):
         self.instance.user_id = self.user_id
         date = self.cleaned_data.get("date")
         time = self.cleaned_data.get("time")
-        nutricionist = self.cleaned_data.get('nutricionist')
-        conflicts = Appointment.objects.filter(date=date).filter(time=time).filter(nutricionist=nutricionist).exclude(pk=self.instance.pk)  # noqa
+        nutritionist = self.cleaned_data.get('nutritionist')
+        conflicts = Appointment.objects.filter(date=date).filter(time=time).filter(nutritionist=nutritionist).exclude(pk=self.instance.pk)  # noqa
         if conflicts.exists():
             raise forms.ValidationError("This appointment conflicts with an existing appointment.")  # noqa
         if date < datetime.date.today():
@@ -43,7 +43,7 @@ class AppointmentForm(forms.ModelForm):
             'date',
             'time',
             'reason',
-            'nutricionist',
+            'nutritionist',
         ]
 
         widgets = {
@@ -54,5 +54,5 @@ class AppointmentForm(forms.ModelForm):
             'time': TimeInput(attrs={
                 'class': 'timepicker'
             }),
-            'nutricionist': forms.Select(attrs={'class': 'form-select'}),
+            'nutritionist': forms.Select(attrs={'class': 'form-select'}),
         }

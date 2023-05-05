@@ -22,15 +22,15 @@ class Appointment(models.Model):
         default=Reason.weight_loss,
     )
 
-    class Nutricionist(models.TextChoices):
+    class Nutritionist(models.TextChoices):
         ANNA = 'Anna', _('Anna Smith')
         JOHN = 'John', _('John Doe')
 
-    nutricionist = models.CharField(
+    nutritionist = models.CharField(
         max_length=4, 
-        choices=Nutricionist.choices,
-        default=Nutricionist.ANNA,
+        choices=Nutritionist.choices,
+        default=Nutritionist.ANNA,
         )
 
     def __str__(self):
-        return f'{self.date} - {self.time} ({self.nutricionist})'
+        return f'{self.date} - {self.time} ({self.nutritionist})'
