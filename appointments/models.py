@@ -7,7 +7,7 @@ class Appointment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
     time = models.TimeField()
-    
+
     class Reason(models.TextChoices):
         weight_loss = 'WL', _('Weight Loss')
         weight_gain = 'WG', _('Weight Gain')
@@ -27,7 +27,7 @@ class Appointment(models.Model):
         JOHN = 'John', _('John Doe')
 
     nutritionist = models.CharField(
-        max_length=4, 
+        max_length=4,
         choices=Nutritionist.choices,
         default=Nutritionist.ANNA,
         )
