@@ -64,9 +64,6 @@ All the colors is designed to create a calming and inviting atmosphere for users
 <img width="1110" alt="image" src="https://user-images.githubusercontent.com/112728772/235248226-ec43c4aa-f1b4-46d1-b95f-8d4426510f2b.png">
 The font choice of Lato, sans-serif for my website is a good choice due to its readability on both desktop and mobile devices. For headers, I chose a larger font size to emphasize important information, while general text uses a smaller font size for easier reading. The font type and size choices tie into the user experience by making the website easy to read and navigate, which is important for user satisfaction.
 
-### Strategy
-The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
-
 ### Images
 Icons and images are an important part of website design as they can help convey information quickly and visually. I chose to use social icons such as Facebook, Twitter and Instagram to make it easy for users to connect with the business on their preferred social media platforms. The Hero image aligns with the theme of promoting healthy nutrition and crates an appealing visual representation of the services. The pictures of the nutricionists were included to give users a sense of familiarity and trust, as well as to introduce them to the team behind the business.
 
@@ -76,3 +73,26 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 ### Custom Javascript
 **** PUT THE CODE HERE *****
 This code is used to automatically remove alert messages from the DOM after a certain amout of time, improving the user experience by reducing clutter and distractions on the page. 
+
+### Strategy
+The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
+
+### Wireframes 
+
+- Mobile 
+<img width="299" alt="image" src="https://user-images.githubusercontent.com/112728772/236647700-e6e5fc72-7690-4572-a17e-a8faa3031804.png">
+
+<img width="298" alt="image" src="https://user-images.githubusercontent.com/112728772/236647712-d24bbdbd-e739-461b-9738-d5886cae484c.png">
+
+<img width="305" alt="image" src="https://user-images.githubusercontent.com/112728772/236647722-f62eb25c-8b91-4a86-9ff0-4b0d68aca9a7.png">
+
+<img width="233" alt="image" src="https://user-images.githubusercontent.com/112728772/236647733-434aea3b-3c3d-4518-8bcf-03d0df81abcf.png">
+
+- Desktop
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/112728772/236647750-55153b39-5910-4e58-ae09-abbba35ef3bc.png">
+
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/112728772/236647753-9e96ce8e-a59c-44b6-a67d-5bea6b26ff27.png">
+
+<img width="443" alt="image" src="https://user-images.githubusercontent.com/112728772/236647759-db57b843-ddcd-4079-aa62-18517d262918.png">
+
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/112728772/236647766-70413afe-5ae6-4354-82c1-3e25d5aacd32.png">
