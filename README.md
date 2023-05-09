@@ -23,6 +23,8 @@ Giovani Fonseca
         * [Custom Javascript](#custom-javascript)
     * [Strategy](#strategy)
     * [Wireframes](#wireframes)
+* [Information Architecture](#information-architecture)
+    * [Entity Relationship Diagram](#entity-relationship-diagram)
 * [User Stories](#user-stories)
 * [Agile Methodology](#agile-methodology)
     * [Canban board](#canban-board)
@@ -96,3 +98,16 @@ The strategy for the iHealthy site is to follow the core UX principles in design
 <img width="443" alt="image" src="https://user-images.githubusercontent.com/112728772/236647759-db57b843-ddcd-4079-aa62-18517d262918.png">
 
 <img width="444" alt="image" src="https://user-images.githubusercontent.com/112728772/236647766-70413afe-5ae6-4354-82c1-3e25d5aacd32.png">
+
+## Information Architecture
+
+For the iHealthy website, I have implemented a customer data model called "Appointment" in Django. The Appointment model represents a user's appointment for a nutrition session. Here is how the data model is structured:
+
+ - User: This is a foreign key to built-in User model provided by Django's authentication system. It represents the user who has scheduled the appointment.
+ - Date: This field stores the date of the appointment.
+ - Time: This field stores the time of the appointment.
+ - Reason: This field represents the reason for the appointment and is implemented as a choice field with predefined options. The available options are: Weight Loss, Weight Gain, Better Healthy, Meal Plan, Nutrition Education and Other.
+
+The CRUD functionality is achieved through Django's model forms and views. The website provides appropriate forms and views to create, display, update, and delete appointments, ensuring a seamless user experience when managing their nutrition appointments, providing a convenient and efficient way to manage their health goals.
+
+### Entity Relationship Diagram
