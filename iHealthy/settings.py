@@ -56,6 +56,9 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_SIGNUP_URL = '/accounts/signup/'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = "none"
+
 CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
@@ -138,9 +141,9 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu96b.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu97.gitpod.io']  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu96b.gitpod.io']  # noqa
+CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu97.gitpod.io']  # noqa
 
 
 # Static files (CSS, JavaScript, Images)
