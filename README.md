@@ -25,6 +25,8 @@ Giovani Fonseca
     * [Wireframes](#wireframes)
 * [Information Architecture](#information-architecture)
     * [Entity Relationship Diagram](#entity-relationship-diagram)
+    * [Database Choice](#database-choice)
+    * [Data Models](#data-models)
 * [User Stories](#user-stories)
 * [Agile Methodology](#agile-methodology)
     * [Canban board](#canban-board)
@@ -113,5 +115,41 @@ The CRUD functionality is achieved through Django's model forms and views. The w
 ### Entity Relationship Diagram
 ![mermaid-diagram-2023-05-15-211715](https://github.com/Giov3ss/iHealthy/assets/112728772/87b8397c-ecb9-4c3b-a25f-1ec13716ff3f)
 
+### Database Choice
+I used PostgreSQL as the database for this project. Hosting the application on Heroku allows for easy deployment and scalability, and PostgreSQL is one of the supported and recommemdede databases on the Heroku platform.
 
+### Data Models
+
+#### Fields:
+- 'user' (ForeingKey to User model): The user associated with the appointment. 
+- 'date' (DateField): The date of the appointment.
+- 'time' (TimeField): The time of the appointment.
+- 'reason' (CharField with choices): The reason for the appointment.
+Valid choices include:
+ - Weight Loss
+ - Weight Gain
+ - Better Healthy
+ - Meal Planning
+ - Nutrition Education
+ - Other
+- 'nutritionist' (CharField with choices): The assigned nutritionist for the appointment.
+Valid choices include:
+ - Anna Smith
+ - John Doe
+
+#### Validation:
+- 'user': Required field, as it represents the user associated with the appointment.
+- 'date': No specific validation. 
+- 'time': No specific validation. 
+- 'reason': Required field, with predefined choices. The default choice is "Weight Loss"
+- 'nutritionist': Required field, with predefined choices. The default choice is "Anna Smith".
+
+#### CRUD Operations: 
+- Create: An appointment is created when a user schedules a new appointment. The user selects the date, time, reason and nutritionist from the available options.
+
+- Read: The appointments table is read when displaying the user's scheduled appointments. The appointments are retrieved based on the user's ID.
+
+- Update: Appointments can be updated when a user reschedules an existing appointment. The user can modify the date, time, reason and nutritionist for the appointment.
+
+- Delete: Appointments can be deleted if a user cancels their scheduled appointment.
 
