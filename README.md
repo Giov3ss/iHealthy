@@ -153,3 +153,6 @@ Valid choices include:
 
 - Delete: Appointments can be deleted if a user cancels their scheduled appointment.
 
+![mermaid-diagram-2023-05-15-220416](https://github.com/Giov3ss/iHealthy/assets/112728772/91a9b38f-6666-4b76-ba3e-5438fae99e01)
+
+
