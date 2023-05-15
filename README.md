@@ -111,3 +111,7 @@ For the iHealthy website, I have implemented a customer data model called "Appoi
 The CRUD functionality is achieved through Django's model forms and views. The website provides appropriate forms and views to create, display, update, and delete appointments, ensuring a seamless user experience when managing their nutrition appointments, providing a convenient and efficient way to manage their health goals.
 
 ### Entity Relationship Diagram
+![mermaid-diagram-2023-05-15-211715](https://github.com/Giov3ss/iHealthy/assets/112728772/87b8397c-ecb9-4c3b-a25f-1ec13716ff3f)
+
+
+
