@@ -24,7 +24,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('appointment_list')
-    return render(request, 'appointments/form.html', {'form': form, 'title': 'create'})  # noqa
+    return render(request, 'appointments/form.html', {'form': form, 'title': 'Create'})  # noqa
 
 
 @login_required
@@ -40,7 +40,7 @@ def update(request, pk):
             form.save()
             messages.success(request, 'Appointment updated successfully!')
             return redirect('appointment_list')
-        return render(request, 'appointments/form.html', {'form': form, 'title': 'update'})  # noqa
+        return render(request, 'appointments/form.html', {'form': form, 'title': 'Update'})  # noqa
     else:
         # message user and send them to error page
         message.warning(request, 'You can only update you own appointments!')
