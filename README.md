@@ -27,9 +27,10 @@ Giovani Fonseca
     * [Entity Relationship Diagram](#entity-relationship-diagram)
     * [Database Choice](#database-choice)
     * [Data Models](#data-models)
-* [User Stories](#user-stories)
+    * [CRUD Diagrams](#crud-diagrams)
 * [Agile Methodology](#agile-methodology)
-    * [Canban board](#canban-board)
+    * [Project Goals](#project-goals)
+    * [User Stories](#user-stories)
 * [Structure](#structure)
     * [Database](#database)
     * [Skeleton](#skeleton)
@@ -153,6 +154,30 @@ Valid choices include:
 
 - Delete: Appointments can be deleted if a user cancels their scheduled appointment.
 
+### CRUD Diagrams
 ![mermaid-diagram-2023-05-15-220416](https://github.com/Giov3ss/iHealthy/assets/112728772/91a9b38f-6666-4b76-ba3e-5438fae99e01)
 
+## Agile Process
+
+### Project Goals
+The purpose of the iHealthy website is to provide a convenient platform for users to schedule appointments with nutritionist. The website aims to steamline the process of connecting users with qualified professionals to receive personalized nutrition guidance and support.
+
+For users:
+- Easily navigate the website to fing nutritionists and their availability.
+- Schedule appointments with nutritionists based on their preferred date and time. 
+- Provide necessary information and health details for nutritionist's assessment.
+- Access secure and private storage of their personal and health-related information. 
+
+For administrators:
+- Update and maintain the appointment scheduling system. 
+- Monitor and track user appointments and ensure efficient communication between users and nutritionists. 
+- Implement necessary security measures to protect user data and privacy.
+
+### User Stories:
+- As a user, I want to view a list of available appointments with nutritionists so I can schedule a session.
+- As a user, I want to book an appointment with a nutritionist providing necessary details such as my preferred date and time.
+- As a user, I want the ability to reschedule or cancel my appointments if my plans change or if I need to make adjustments.
+- As a user, I want to view my appointment details, allowing me to track my appointments.
+- As a user, I want to have a user-friendly interface that guides me through the appointment booking process and provides clear instructions on how to correct any errors or issues with form submission. 
+- As a user, I want my personal information and appointment details to be securely stored and kept private, ensuring the confidentiality of my healthcare-related data. 
 
