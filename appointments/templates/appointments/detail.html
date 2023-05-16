@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h1 class="card-title">{{ appointment.title }}</h1>
+                    <p class="card-text"><strong>Nutritionist: </strong>{{ appointment.get_nutritionist_display }}</p>
+                    <p class="card-text"><strong>Reason: </strong>{{ appointment.get_reason_display }}</p>
+                    <p class="card-text">{{ appointment.description }}</p>
+                    <p class="card-text"><strong>Date: </strong> {{ appointment.date }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
     <h1>{{ appointment.title }}</h1>
     <p>{{ appointment.description }}</p>
     <p>{{ appointment.date }}</p>
+-->
 {% endblock %}
