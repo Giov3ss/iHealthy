@@ -174,10 +174,20 @@ For administrators:
 - Implement necessary security measures to protect user data and privacy.
 
 ### User Stories:
-- As a user, I want to view a list of available appointments with nutritionists so I can schedule a session.
+- As a visitor, I want to register an account so that I can access personalized features and manage my appointments effectively.
+- As a user, I want to log in to my account so that I can securely access my appointments and personalized information. 
 - As a user, I want to book an appointment with a nutritionist providing necessary details such as my preferred date and time.
-- As a user, I want the ability to reschedule or cancel my appointments if my plans change or if I need to make adjustments.
+- As a user, I want to choose a nutritionist from a list of available options so that I can select the one who best suits my needs. 
+- As a user, I want to select the date and time for my appointment using user-friendly interface, such as a date picker or dropdowns, so that I can easily choose a suitable time slot.
+- As a user, I want to update the detail of an appointment, such as the nutritionist, date, time or reason, so that I can make changes if necessary.
+- As a user, I want to delete an appointment that I no longer need so that it does not clutter my schedule.
 - As a user, I want to view my appointment details, allowing me to track my appointments.
+- As a user, I want to view the details of an appointment, including the nutritionist's name, appointment date, time and reason, so that I can review the information before the consultation.
 - As a user, I want to have a user-friendly interface that guides me through the appointment booking process and provides clear instructions on how to correct any errors or issues with form submission. 
 - As a user, I want my personal information and appointment details to be securely stored and kept private, ensuring the confidentiality of my healthcare-related data. 
-
+- As an admin, I want to log in to the admin panel so that I can access the administrative features of the website.
+- As an admin, I want to view a list of all appointments made by users so that I can see an overview of the scheduled consultations.
+- As an admin, I want to view the details of a specific appointment, including the user's name, selected nutritionist, appointment date, time and reason, so that I can gatherall the necessary information.
+- As an admin, I want to delete an apppointment made by a user if it is no longer required or if the user requests its removal, so that the appointment schedule remains accurate and updated, ensuring better organization and resource management, and providing a satisfactory user experience.
+- As an admin, I want to add a new appointment on behalf of a user if it is requested or necessary, providing user's name, selected nutritionist, appointment date, time and reason, so that the user's appointment needs are met, the schedule is properly managed and the user receives the necessary services and support.
+- As an admin, I want to delete a user's account if requested or if it violates the website's policies, ensuring that their personal information is securely removed, so that the user's data privacy is protected, the website maintains compliance with policies and regulations, and the overall integrity and security of the platform are maintained. 
