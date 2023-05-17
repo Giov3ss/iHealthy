@@ -1,6 +1,7 @@
 # iHealthy Nutrition
 
-## image of the site goes here 
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/86e85c5a-39f3-4b28-930c-a0840c303b4d)
+
 
 ## live site goes here
 
