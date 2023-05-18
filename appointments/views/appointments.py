@@ -23,6 +23,7 @@ def create(request):
     form = AppointmentForm(request.user.id, request.POST or None)
     if form.is_valid():
         form.save()
+        messages.success(request, 'You have created an appointment!')
         return redirect('appointment_list')
     return render(request, 'appointments/form.html', {'form': form, 'title': 'Create'})  # noqa
 
