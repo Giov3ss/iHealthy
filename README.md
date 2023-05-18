@@ -218,3 +218,4 @@ By focusing on these core features, the MVP will provide users with the ability 
 
 ### Agile Tool
 #### User Story Template
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/b20ffaac-2629-4f1c-85ce-ba27b8ebfbc1)
