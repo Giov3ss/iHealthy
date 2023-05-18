@@ -33,6 +33,11 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
 * [Agile Methodology](#agile-methodology)
     * [Project Goals](#project-goals)
     * [User Stories](#user-stories)
+    * [Feasibility vs Importance](#feasibility-vs-importance)
+    * [Scope](#scope)
+    * [Agile Tool](#agile-tool)
+        * [User Story Template](#user-story-template)
+        * [Epic Stories](#epic-stories)
 * [Structure](#structure)
     * [Database](#database)
     * [Skeleton](#skeleton)
@@ -194,6 +199,22 @@ For administrators:
 - As an admin, I want to add a new appointment on behalf of a user if it is requested or necessary, providing user's name, selected nutritionist, appointment date, time and reason, so that the user's appointment needs are met, the schedule is properly managed and the user receives the necessary services and support.
 - As an admin, I want to delete a user's account if requested or if it violates the website's policies, ensuring that their personal information is securely removed, so that the user's data privacy is protected, the website maintains compliance with policies and regulations, and the overall integrity and security of the platform are maintained. 
 
+### Feasibility vs Importance
 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/fe7f0ffd-1840-4e50-afc8-08bf7c4075ec)
 
+### Scope
+
+To align the project goals with the available resources and skill set, the scope has been refined to focus on delivering a MVP that prioritizes essential features and functionality. The MVP will include the following key user stories:
+- As a user, I want to register an account so that I can access personalized features and manage my appointments effectively.
+- As a user, I want to choose a nutritionist from a list of available options so that I can select the one who best suits my needs.
+- As a user, I want to be able to schedule an appointment with a nutritionist by selecting a date, time and reason.
+- As a user, I want to be able to view details of my appointments, such as nutritionist's name, reason, date and time.
+- As a user, I want to be able to update or delete my appointments.
+- As an admin, I want to be able to view a list of user appointments and manage them.
+- As an admin, I want to be able to delete user accounts if necessary, ensuring the removal of personal information. 
+
+By focusing on these core features, the MVP will provide users with the ability to register, schedule appointments and manage their appointments. The admin will have the tools to oversee appointments and perform adminitrative tasks.
+
+### Agile Tool
+#### User Story Template
