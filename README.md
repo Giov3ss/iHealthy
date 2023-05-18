@@ -191,3 +191,7 @@ For administrators:
 - As an admin, I want to delete an apppointment made by a user if it is no longer required or if the user requests its removal, so that the appointment schedule remains accurate and updated, ensuring better organization and resource management, and providing a satisfactory user experience.
 - As an admin, I want to add a new appointment on behalf of a user if it is requested or necessary, providing user's name, selected nutritionist, appointment date, time and reason, so that the user's appointment needs are met, the schedule is properly managed and the user receives the necessary services and support.
 - As an admin, I want to delete a user's account if requested or if it violates the website's policies, ensuring that their personal information is securely removed, so that the user's data privacy is protected, the website maintains compliance with policies and regulations, and the overall integrity and security of the platform are maintained. 
+
+
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/fe7f0ffd-1840-4e50-afc8-08bf7c4075ec)
+
