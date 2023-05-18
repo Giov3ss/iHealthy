@@ -83,8 +83,8 @@ Icons and images are an important part of website design as they can help convey
 I chose to use Bootstrap for my website because it allowed me to quickly and easily create a responsive design that works well on different devices. the pre-designed templates and components also helped me to save time in the development process.
 
 ### Custom Javascript
-**** PUT THE CODE HERE *****
-This code is used to automatically remove alert messages from the DOM after a certain amout of time, improving the user experience by reducing clutter and distractions on the page. 
+- [JS Code - Appointments](static/js/appointments.js)
+- [JS Code - Messages](static/js/messages.js)
 
 ### Strategy
 The strategy for the iHealthy site is to follow the core UX principles in design thinking, which includes creating a persona profile user Code Institute template. This profile will help guide the design process to ensure that the website meets the needs and preferences of the target users. The site aims to provide all the necessary feature for the persona while ensuring intuitive navigation and ease of use, the design is resposive using Bootstrap grid, cards, elements and custom CSS.
