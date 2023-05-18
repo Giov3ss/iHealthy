@@ -251,7 +251,7 @@ By focusing on these core features, the MVP will provide users with the ability 
 #### NavBar
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/6a5e18b8-30fc-4a4b-a9f0-e5f7dd0faeaa)
 
-Navbar mobile
+#### Navbar mobile
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/e2fd2347-b033-4163-9ed3-05a456026725)
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8ef97d6a-8d4c-4f53-9906-3afcf3cd6c3c)
 
