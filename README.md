@@ -219,3 +219,30 @@ By focusing on these core features, the MVP will provide users with the ability 
 ### Agile Tool
 #### User Story Template
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/b20ffaac-2629-4f1c-85ce-ba27b8ebfbc1)
+
+### Features
+#### Home Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8b9aa9aa-9e7c-42b8-9e68-6b6624b4a9d5)
+
+#### Sign Up Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/30b3eca1-be14-4f12-a1c1-1d4f1fba4126)
+
+#### Login Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/df298fc9-a080-4edf-a658-7d67b55b468b)
+
+#### Home Page - If the user is logged in
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/15df4461-f368-4bed-b13f-a0c612cadc23)
+
+#### Appointment List
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/731326d8-7fe1-45f3-ac4d-7908b01c4a92)
+
+#### Create Appointment
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/52a47d93-cba8-420f-8eda-78971366f823)
+
+#### View Appointment Details
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/673020c4-8e3f-45b5-83df-db21e2496b81)
+
+#### Update Appointment
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/04a403b9-c0ed-46ab-9df5-a35bc1a315dc)
+
+
