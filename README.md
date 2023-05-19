@@ -278,6 +278,8 @@ The create feature allows users to schedule a new appointment with a nutritionis
 - The delete appointment feature allows users to remove an appointment from their schedule. It prompts the user to confirm the deletion before permanently removing the appointment from their list. 
 
 #### NavBar 
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/2cd79574-6500-43b4-88fb-33a518a7db08)
+- The navbar provides a quick access to essential features of the iHealthy website such as, Home, Register and Login if the user is not authenticated. 
 
 #### NavBar - if the user is Authenticated 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/6a5e18b8-30fc-4a4b-a9f0-e5f7dd0faeaa)
@@ -286,8 +288,10 @@ The create feature allows users to schedule a new appointment with a nutritionis
 #### Navbar mobile
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/e2fd2347-b033-4163-9ed3-05a456026725)
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8ef97d6a-8d4c-4f53-9906-3afcf3cd6c3c)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/10f0d5b0-a64b-4754-87be-ffae2eb68945)
 - The Navbar is fully responsive, collapsing into a hamburguer menu when the screen size becomes smaller.
-- From the Navbar the user has option to register or login into their account, once the user is authenticated, the navbar change to logout and appointments sections will appear. 
+- From the Navbar the user has option to register or login into their account. 
+- Once the user is authenticated, logout and appointments sections will appear. 
 
 ### Messages Display
 #### Sign in Message
