@@ -259,14 +259,28 @@ By focusing on these core features, the MVP will provide users with the ability 
 #### Sign Up
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/675273ca-3ff4-45fc-a875-6175cbb0de89)
 
+#### Logout
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/a6c9826d-9211-4b0a-b8f1-9a9b5ade5e70)
+
 #### Date cannot be in the past
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/343a849a-b988-4937-a538-7eaa5cb4fa03)
+
+#### Appointment Created
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/d59d6ce0-d840-42a4-9e45-1035294005aa)
 
 #### Appointment Updated
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/3148c0e1-12df-4fb7-9c7f-806d9c15d4ca)
 
-#### Appointment Deleted
+#### Appointment Deleted -1 
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/56a7be92-33f7-4333-a8ee-cf7153349872)
+
+#### Appointment Deleted sucessfully
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ca3d40f8-5606-4784-a8ba-971b3f71efd5)
 
+#### Conflicts Date/Time Appointments
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/efda6fe8-1514-4e9f-8fde-31ab60ea7582)
+
+### Admin Panel/ Superuser
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9e78bb95-87fe-4126-aa86-1783b9961e4e)
 
 
