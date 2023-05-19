@@ -65,6 +65,7 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
         * [Conflicts Date/Time/Nutritionist Appointments Message](#conflicts-datetimenutritionist-appointments-message)
         * [Admin Panel/Superuser](#admin-panel-superuser)
     * [404 Page](#404-page)
+* [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
     * [Code Validation](#code-validation)
@@ -240,52 +241,52 @@ By focusing on these core features, the MVP will provide users with the ability 
 #### User Story Template
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/b20ffaac-2629-4f1c-85ce-ba27b8ebfbc1)
 
-### Features
-#### Home Page
+## Features
+### Home Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8b9aa9aa-9e7c-42b8-9e68-6b6624b4a9d5)
 - The home page of iHealthy features a captivating hero image with a welcoming message, "Welcome to iHealthy". It provides an overview of the platform's features, services, and benefits. The prominent "Book Now" button enables users to quickly register or log in, ensuring easy access to iHealthy's comprehensive health and wellness services. 
 
-#### Sign Up Page
+### Sign Up Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/30b3eca1-be14-4f12-a1c1-1d4f1fba4126)
 - The sign-up page allows new users to create an account on the iHealthy website. User can provide their personal information, such as name, email address (optional) and password, to register abd gain full access to the platform's features.
 
-#### Login Page
+### Login Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/df298fc9-a080-4edf-a658-7d67b55b468b)
 - The login page provides a form where registered users can enter their credentials (username and password) to log into iHealthy accounts. Once logged in users can access their personalized information and utilize the functionalities of the website. 
 
-#### Home Page - If the user is Authenticated
+### Home Page - If the user is Authenticated
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/15df4461-f368-4bed-b13f-a0c612cadc23)
 - This version of the home page is displayed when a user is authenticated and logged into their iHealthy account. The user can have access of their appointment just clicking in the navbar "Appointments" section.  
 
-#### Appointment List
+### Appointment List
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/731326d8-7fe1-45f3-ac4d-7908b01c4a92)
 - The Appointment list page presents a list of all the appointments schedule by the user. It provides a brief overview of each appointment, incluiding details like date, time and nutritionist name. Users can view, update or delete appointments from this page just clicking in the icons on the right of the details. 
 
-#### Create Appointment
+### Create Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/52a47d93-cba8-420f-8eda-78971366f823)
 The create feature allows users to schedule a new appointment with a nutritionist. Users can select the desired date, time, nutritionist and provide a reason for the appointment. Upon submission, the appointment is added to the user's appointment list. 
 
-#### View Appointment Details
+### View Appointment Details
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/673020c4-8e3f-45b5-83df-db21e2496b81)
 - This feature enables users to view the details of a specific appointment. It displays comprehensive information about the appointment, incluiding the date, time, nutritionist and reason. 
 
-#### Update Appointment
+### Update Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/04a403b9-c0ed-46ab-9df5-a35bc1a315dc)
 - User can use the update appointment feature to modify the details of an existing appointment. They can change the appointment date, time, nutritionist and reason.
 
-#### Delete Appointment
+### Delete Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ff746b6c-881a-4b14-8dd9-f8d22b43647a)
 - The delete appointment feature allows users to remove an appointment from their schedule. It prompts the user to confirm the deletion before permanently removing the appointment from their list. 
 
-#### NavBar 
+### NavBar 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/2cd79574-6500-43b4-88fb-33a518a7db08)
 - The navbar provides a quick access to essential features of the iHealthy website such as, Home, Register and Login if the user is not authenticated. 
 
-#### NavBar - if the user is Authenticated 
+### NavBar - if the user is Authenticated 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/6a5e18b8-30fc-4a4b-a9f0-e5f7dd0faeaa)
 - The navbar provides a quick access to essential features of the iHealthy website such as, Home, Logout and Appointments if the user is authenticated. 
 
-#### Navbar mobile
+### Navbar mobile
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/e2fd2347-b033-4163-9ed3-05a456026725)
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8ef97d6a-8d4c-4f53-9906-3afcf3cd6c3c)
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/10f0d5b0-a64b-4754-87be-ffae2eb68945)
@@ -293,43 +294,53 @@ The create feature allows users to schedule a new appointment with a nutritionis
 - From the Navbar the user has option to register or login into their account. 
 - Once the user is authenticated, logout and appointments sections will appear. 
 
-### Messages Display
-#### Sign in Message
+## Messages Display
+### Sign in Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/675273ca-3ff4-45fc-a875-6175cbb0de89)
 - After successful registration or login, it will pop up in the screen a successful message, alert the user is login into their account.
 
-#### Logout Message
+### Logout Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/a6c9826d-9211-4b0a-b8f1-9a9b5ade5e70)
 - When the user logs out their iHealthy account, it will pop up in the screen a logout message to acknowledge the successful logout.
 
-#### Date cannot be in the past 
+### Date cannot be in the past 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/343a849a-b988-4937-a538-7eaa5cb4fa03)
 - This message is displayed when a user attempts to book an appointment with a date that has alrady passed. It serves as a validation to ensure that appointments are scheduled for future dates only. 
 
-#### Appointment Created Message
+### Appointment Created Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/d59d6ce0-d840-42a4-9e45-1035294005aa)
 - This message confirms the succesful creation of an appointment and provides a positive feedback to the user, indicating that the appointment has been successfully scheduled.
 
-#### Appointment Updated Message
+### Appointment Updated Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/3148c0e1-12df-4fb7-9c7f-806d9c15d4ca)
 - This message is displayed when an existing appointment is successfully updated with new information. It informs the user that their changes have been saved. 
 
-#### Confirm Appointment Deletion Message
+### Confirm Appointment Deletion Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/56a7be92-33f7-4333-a8ee-cf7153349872)
 - This message prompts the user to confirm their intention to delete an appointment. It includes option such as "Yes, delete" and "No, go back", allowing the user to make a decision regarding the deletion.
 
-#### Appointment Deleted Sucessfully Message
+### Appointment Deleted Sucessfully Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ca3d40f8-5606-4784-a8ba-971b3f71efd5)
 - This message is shown after an appointment has been sucessfully deleted. It serves as a confirmation to the user that the appointment has been removed from their schedule.
 
-#### Conflicts Date/Time/Nutritionist Appointments Message
+### Conflicts Date/Time/Nutritionist Appointments Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/efda6fe8-1514-4e9f-8fde-31ab60ea7582)
 - This message appears when a user tries to create an appointment that conflicts with an existing appointment in terms of date, time and nutritionist of another user. It alerts the user about the conflict, so they can choose another time, date or nutritionist. 
 
-#### Admin Panel/ Superuser 
+### Admin Panel/ Superuser 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9e78bb95-87fe-4126-aa86-1783b9961e4e)
 - On the Admin Panel, as an admin/superuser I have full access to CRUD functionality so I can view, create, edit and delete the appointments or users. 
 
-#### 404 Page
+### 404 Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/aa78af4b-24a3-4f6d-b6dd-663437e6946a)
 - The 404 Page is displayed when a user tries to acces a page or resource that does not exist. It provides a user-friendly message indicating that the requested page could not be found, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
+
+## Future Features
+- Personalized Meal Plans: Allow users to generate personalized meal plans based on their dietary perferences and goals, this can include, meal suggestion, recipes and shopping list.
+- Fitness Tracking: Integrate fitness tracking capabilities into the platform, allowing users to track their physical actives, set fitness goals and monitor their progress.
+- Community Forums: A community where the users can engage discussions, share their experience, ask question and seek advice from nutritionist and fellow users.
+- Integration with Health Devices: This integration will allow users to seamlessly sync their health data with the iHealthy platform for a more comprehensive health tracking experience, for example: smart scales and blood pressure monitors.
+- Recipe Repository: Build a respository of healthy recipes that users can access for meal inspiration, or even submit their own recipes to contribute to the community. 
+- iHealthy Elements: Incorporate elementes into the platform to make the health and wellness journey more engaging and motivating. This can include challenges, achievements and rewards for reaching health milestones or consistently following healthy habits. 
+- Mobile App: Create a mobile app to iHealthy, providing users with convenient access to their appointments, meal plans, fitness tracking and other features on their smartphone. 
+- Language Support: Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the iHealthy platform. 
