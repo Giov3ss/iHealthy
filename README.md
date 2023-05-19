@@ -64,6 +64,7 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
         * [Appointment Deleted Sucessfully Message](#appointment-deleted-sucessfully-message)
         * [Conflicts Date/Time/Nutritionist Appointments Message](#conflicts-datetimenutritionist-appointments-message)
         * [Admin Panel/Superuser](#admin-panel-superuser)
+    * [404 Page](#404-page)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
     * [Code Validation](#code-validation)
@@ -325,4 +326,5 @@ The create feature allows users to schedule a new appointment with a nutritionis
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9e78bb95-87fe-4126-aa86-1783b9961e4e)
 - On the Admin Panel, as an admin/superuser I have full access to CRUD functionality so I can view, create, edit and delete the appointments or users. 
 
+#### 404 Page
 
