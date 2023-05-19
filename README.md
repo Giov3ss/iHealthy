@@ -336,11 +336,11 @@ The create feature allows users to schedule a new appointment with a nutritionis
 - The 404 Page is displayed when a user tries to acces a page or resource that does not exist. It provides a user-friendly message indicating that the requested page could not be found, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 ## Future Features
-- Personalized Meal Plans: Allow users to generate personalized meal plans based on their dietary perferences and goals, this can include, meal suggestion, recipes and shopping list.
-- Fitness Tracking: Integrate fitness tracking capabilities into the platform, allowing users to track their physical actives, set fitness goals and monitor their progress.
-- Community Forums: A community where the users can engage discussions, share their experience, ask question and seek advice from nutritionist and fellow users.
-- Integration with Health Devices: This integration will allow users to seamlessly sync their health data with the iHealthy platform for a more comprehensive health tracking experience, for example: smart scales and blood pressure monitors.
-- Recipe Repository: Build a respository of healthy recipes that users can access for meal inspiration, or even submit their own recipes to contribute to the community. 
-- iHealthy Elements: Incorporate elementes into the platform to make the health and wellness journey more engaging and motivating. This can include challenges, achievements and rewards for reaching health milestones or consistently following healthy habits. 
-- Mobile App: Create a mobile app to iHealthy, providing users with convenient access to their appointments, meal plans, fitness tracking and other features on their smartphone. 
-- Language Support: Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the iHealthy platform. 
+- **Personalized Meal Plans:** Allow users to generate personalized meal plans based on their dietary perferences and goals, this can include, meal suggestion, recipes and shopping list.
+- **Fitness Tracking:** Integrate fitness tracking capabilities into the platform, allowing users to track their physical actives, set fitness goals and monitor their progress.
+- **Community Forums:** A community where the users can engage discussions, share their experience, ask question and seek advice from nutritionist and fellow users.
+- **Integration with Health Devices:** This integration will allow users to seamlessly sync their health data with the iHealthy platform for a more comprehensive health tracking experience, for example: smart scales and blood pressure monitors.
+- **Recipe Repository:** Build a respository of healthy recipes that users can access for meal inspiration, or even submit their own recipes to contribute to the community. 
+- **iHealthy Elements:** Incorporate elementes into the platform to make the health and wellness journey more engaging and motivating. This can include challenges, achievements and rewards for reaching health milestones or consistently following healthy habits. 
+- **Mobile App:** Create a mobile app to iHealthy, providing users with convenient access to their appointments, meal plans, fitness tracking and other features on their smartphone. 
+- **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the iHealthy platform. 
