@@ -319,7 +319,7 @@ The create feature allows users to schedule a new appointment with a nutritionis
 
 #### Conflicts Date/Time/Nutritionist Appointments Message
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/efda6fe8-1514-4e9f-8fde-31ab60ea7582)
-This message appears when a user tries to create an appointment that conflicts with an existing appointment in terms of date, time and nutritionist of another user. It alerts the user about the conflict, so they can choose another time, date or nutritionist. 
+- This message appears when a user tries to create an appointment that conflicts with an existing appointment in terms of date, time and nutritionist of another user. It alerts the user about the conflict, so they can choose another time, date or nutritionist. 
 
 #### Admin Panel/ Superuser 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9e78bb95-87fe-4126-aa86-1783b9961e4e)
