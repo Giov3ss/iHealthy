@@ -16,7 +16,7 @@ from pathlib import Path
 DEBUG = False
 if os.path.isfile('env.py'):
     import env
-    DEBUG = True
+    DEBUG = False
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -110,6 +110,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
@@ -141,9 +142,9 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu97.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-te56nuqwl92.ws-eu97.gitpod.io']  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-ahgbr79grsy.ws-eu97.gitpod.io']  # noqa
+CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-te56nuqwl92.ws-eu97.gitpod.io']  # noqa
 
 
 # Static files (CSS, JavaScript, Images)

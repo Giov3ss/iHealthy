@@ -51,7 +51,7 @@ def update(request, pk):
 @login_required
 def delete(request, pk):
     appointment = get_object_or_404(Appointment, pk=pk)
-    # making sure if the user owns the appointment before they can update it 
+    # making sure if the user owns the appointment before they can update it
     if appointment.user.id != request.user.id:
         # message user and send them to error page
         message.warning(request, 'You can only delete your own appointments!')
@@ -61,5 +61,25 @@ def delete(request, pk):
         appointment.delete()
         messages.success(request, 'Appointment deleted successfully!')
         return redirect('appointment_list')
-    
     return render(request, 'appointments/appointment_delete.html')
+
+
+def error_404_view(request, exception):
+    """
+    Displays 404.html path
+    """
+    return render(request, '404.html')
+
+
+def handler500(request, *args, **argv):
+    """
+    Displays 500.html path
+    """
+    return render(request, '500.html')
+
+
+def handler403(request, *args, **argv):
+    """
+    Displays 403.html path
+    """
+    return render(request, '403.html')
