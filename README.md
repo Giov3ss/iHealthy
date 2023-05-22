@@ -68,8 +68,8 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
 * [Future Features](#future-features)
 * [Testing](#testing)
 * [Manual Testing](#manual-testing)
+* [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
     * [Code Validation](#code-validation)
-    * [Manual Testing](#manual-testing)
 * [Bugs and Fixes](#bugs-and-fixes)
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
@@ -351,19 +351,58 @@ To view the detailed testing results, please [CLICK HERE](https://github.com/Gio
 
 ## Manual Testing
 ### Manual Testing Register:
-[x] Registering with valid information display a success message.
-[x] Logging in with the registered username and password display a success message.
-[x] Registering with an already registered email displays an error message.
-[x] Registering with invalid information displays relevant error message.
-[x] Registering without filling in required fiels displays error message indicating the missing fields.
+- Registering with valid information display a success message.
+- Logging in with the registered username and password display a success message.
+- Registering with an already registered email displays an error message.
+- Registering with invalid information displays relevant error message.
+- Registering without filling in required fiels displays error message indicating the missing fields.
 
 ### Manual Testing Login:
-[x] Logging in with the registered username and password display a success message.
-[x] Incorrect credential display an error messsage indicating invalid credentials.
-[x] Leave the username or password field empty display an error message, indicating that fields is required.
+- Logging in with the registered username and password display a success message.
+- Incorrect credential display an error messsage indicating invalid credentials.
+- Leave the username or password field empty display an error message, indicating that fields is required.
 
 ### Manual Testing Create Appointment:
-[x] Fill all the required fiels such as date, time, reason and nutritionist with valid inputs, the appointment is create successfully and a success message displayed on the screen. 
-[x] Leave any required fields empty an error message appear on the screen.
-[x] Choose a past date for the appointment and submit the form, an error message is displayed on the screen.
-[x] Conflicts of dates, times and nutritionist with existing appointments, an error message is displayed on the screen.
+- Fill all the required fiels such as date, time, reason and nutritionist with valid inputs, the appointment is create successfully and a success message displayed on the screen. 
+- Leave any required fields empty an error message appear on the screen.
+- Choose a past date for the appointment and submit the form, an error message is displayed on the screen.
+- Conflicts of dates, times and nutritionist with existing appointments, an error message is displayed on the screen.
+
+## Compatibility and Responsive Testing
+
+I ensure my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
+
+| TOOL/Device             | Browser    | OS             | Viewport      |
+|-------------------------|------------|----------------|---------------|
+| iPhone 14 Plus          | Chrome     | iOS, v16.0     | 428 x 746 px  |
+| Moto G9 Play            | Firefox    | Android, v10.0 | 412 x 804 px  |
+| Samsung Galaxy J7 Prime | Samsung    | Android, v8.1  | 360 x 560 px  |
+| Google Pixel 7 Pro      | Chrome     | Android, v13.0 | 412 x 775 px  |
+| iPhone 12 Mini          | Safari     | iOS, v14.2     | 375 x 629 px  |
+| iPad 10th               | Safari     | iOS, v16.0     | 393 x 786 dp  |
+| iPad Mini 2021          | Chrome     | iOS, v15.5     | 744 x 1059 px |
+| Browserstack windows PC | Edge       | windows 11     | 1336 x 667 px |
+| Browserstack windows PC | Chrome 113 | windows 10     | 1336 x 667 px |
+| Browserstack Mac PC     | Safari     | Safari 15.6    | 1336 x 667 px |
+
+
+### Most Popular browser & Operating System
+
+| Device             | Browser               | Operating System | Description                                              |
+|--------------------|-----------------------|------------------|----------------------------------------------------------|
+| iPhone             | Safari                | iOS              | Popular combination with significant market share        |
+| Android Smartphone | Chrome                | Android          | Widely used browser on the Android platform              |
+| Desktop/Laptop     | Chrome                | Windows          | Popular browser on the Windows operating system          |
+| Desktop/Laptop     | Chrome                | MacOS            | Popular browser on the macOS operating system            |
+| Desktop/Laptop     | Edge                  | Windows          | Microsoft Edge is gaining popularity among users         |
+| Other              | Firefox/Samsung/Opera | Various          | Represents a compromise due to limited testing resources |
+
+The choices in the table are base on the browser market share data provided by [gs.statcounter.com](https://gs.statcounter.com/). Chome and Safari are the dominant browsers, so they are included for testing on different devices and operating systems. Edge is also included as it has a noticeable market share. Since firefox, Samsung Internet and Opera have smaller market shares, they are grouped under the "Other" category to represent a compromise due to limited testing resources.
+
+**Browser Version Market Share:**
+- Chrome: 63.51%
+- Safari: 20.43%
+- Edge: 4.96%
+- Firefox: 2.77%
+- Samsung Internet: 2.59%
+- Opera: 2.39%
