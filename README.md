@@ -66,8 +66,8 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
         * [Admin Panel/Superuser](#admin-panel-superuser)
     * [404 Page](#404-page)
 * [Future Features](#future-features)
-* [Technologies Used](#technologies-used)
 * [Testing](#testing)
+* [Manual Testing](#manual-testing)
     * [Code Validation](#code-validation)
     * [Manual Testing](#manual-testing)
 * [Bugs and Fixes](#bugs-and-fixes)
@@ -344,3 +344,26 @@ The create feature allows users to schedule a new appointment with a nutritionis
 - **iHealthy Elements:** Incorporate elementes into the platform to make the health and wellness journey more engaging and motivating. This can include challenges, achievements and rewards for reaching health milestones or consistently following healthy habits. 
 - **Mobile App:** Create a mobile app to iHealthy, providing users with convenient access to their appointments, meal plans, fitness tracking and other features on their smartphone. 
 - **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the iHealthy platform. 
+
+## Testing
+In the Testing section of the README, I extensively conducted manual testing to ensure the functionality and usability of the iHealthy website. The manual testing process involved following predefined scenarios and documenting the results using a custom issue template on GitHub.
+To view the detailed testing results, please [CLICK HERE](https://github.com/Giov3ss/iHealthy/issues).
+
+## Manual Testing
+### Manual Testing Register:
+[x] Registering with valid information display a success message.
+[x] Logging in with the registered username and password display a success message.
+[x] Registering with an already registered email displays an error message.
+[x] Registering with invalid information displays relevant error message.
+[x] Registering without filling in required fiels displays error message indicating the missing fields.
+
+### Manual Testing Login:
+[x] Logging in with the registered username and password display a success message.
+[x] Incorrect credential display an error messsage indicating invalid credentials.
+[x] Leave the username or password field empty display an error message, indicating that fields is required.
+
+### Manual Testing Create Appointment:
+[x] Fill all the required fiels such as date, time, reason and nutritionist with valid inputs, the appointment is create successfully and a success message displayed on the screen. 
+[x] Leave any required fields empty an error message appear on the screen.
+[x] Choose a past date for the appointment and submit the form, an error message is displayed on the screen.
+[x] Conflicts of dates, times and nutritionist with existing appointments, an error message is displayed on the screen.
