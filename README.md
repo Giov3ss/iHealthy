@@ -416,10 +416,10 @@ The choices in the table are base on the browser market share data provided by [
 ## Accessibility Testing 
 ### Accessibility Audits
 - Desktop
-- ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/189e1601-2de2-4265-9d92-2b239a62b0ee)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/189e1601-2de2-4265-9d92-2b239a62b0ee)
 
 - Mobile 
-- ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ea1401f5-38e1-4e25-a502-88af9c7e1d26)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ea1401f5-38e1-4e25-a502-88af9c7e1d26)
 
 I notice that I got a 97 with a false positive on a contrast issue around the "Book Now" button. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility.
 
