@@ -23,14 +23,14 @@
         {% if request.user.is_authenticated %}
         <a href="{% url 'appointment_create' %}" class="btn btn-outline-primary">Create appointment</a>
         {% else %}
-        <a href="{% url 'account_signup' %}" class="btn btn-outline-primary">Book Now</a>
+        <a href="{% url 'account_signup' %}" class="btn btn-primary">Book Now</a>
         {% endif %}
 </div>
 
 <div class="container-fluid pt-5 pb-5 mt-4 border-top">
     <div class="row mt-3">
         <div class="col-xs-12 col-lg-6">
-            <h3>Why Choose Us?</h3>
+            <h2>Why Choose Us?</h2>
             <p class="pt-3"><i class="fa-solid fa-check"></i> Personalized Nutrition Plan</p>
             <p><i class="fa-solid fa-check"></i> Professional Nutricionist</p>
             <p><i class="fa-solid fa-check"></i> Affordable Pricing</p>
@@ -39,7 +39,7 @@
             <p><i class="fa-solid fa-check"></i> User-Friendly Platform</p>
         </div>
         <div class="col-xs-12 col-lg-6">
-            <h3>What We Offer:</h3>
+            <h2>What We Offer:</h2>
             <p class="pt-3"><i class="fa-solid fa-weight-scale"></i>  Weight Loss</p>
             <p><i class="fa-solid fa-chart-line"></i > Weight Gain</p>
             <p><i class="fa-brands fa-nutritionix"></i> Better Health</p>
@@ -55,9 +55,13 @@
     <div class="row">
         <div class="col pr-3"> 
             <div class="card" style="width: 20rem;">
-                <img src="{% static 'images/annasmith.png' %}" class="card-img-top" alt="Picture of Anna Smith, our nutritionist">
+                <picture>
+                    <source src="{% static 'images/annasmith.webp' %}" type="image/webp">
+                    <source src="{% static 'images/annasmith.avif' %}" type="image/avif">
+                    <img src="{% static 'images/annasmith.png' %}" class="card-img-top" alt="Picture of Anna Smith, our nutritionist">
+                </picture>
                 <div class="card-body">
-                    <h5 class="card-title">Anna Smith</h5>
+                    <h4 class="card-title">Anna Smith</h4>
                     <p class="card-text text-left pt-3">
                         As a highly experienced nutritionist, Anna Smith has dedicated her career to helping individuals
                         and
@@ -75,10 +79,14 @@
             </div>
         </div>
         <div class="col pl-3">
-            <div class="card" style="width: 20rem;">
-                <img src="{% static 'images/johndoe.png' %}" class="card-img-top" alt="Picture of John Doe, our nutritionist">
+            <div class="card"  style="width: 20rem;">
+                <picture>
+                    <source src="{% static 'images/johndoe.webp'%}" type="image/webp">
+                    <source src="{% static 'images/johndoe.avif'%}" type="image/avif">
+                    <img src="{% static 'images/johndoe.png' %}" class="card-img-top" alt="Picture of John Doe, our nutritionist">
+                </picture>
                 <div class="card-body">
-                    <h5 class="card-title">John Doe</h5>
+                    <h4 class="card-title">John Doe</h4>
                     <p class="card-text pt-3">
                         As a registered dietitian and nutritionist with 10 years of experience, John Doe is committed to helping people achieve optimal health through sustainable lifestyle changes. 
                         He believes that a balanced and varied diet, along with regular exercise, is essential for wellbeing. 
