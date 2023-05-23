@@ -57,8 +57,9 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #0000;
+    border-color: #fff;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -74,27 +75,6 @@ body {
 .btn-secondary:hover {
     background-color: #0069d9;
     border-color: #0062cc;
-}
-
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
 }
 
 .btn-signup {
@@ -119,19 +99,6 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
 /* footer */
 
 a {
@@ -144,8 +111,11 @@ a:hover {
 }
 
 .social-icons {
+    display: flex;
+    align-items: flex-end;
     font-size: 24px;
     color: #5c5f66;
+    gap: 10px;
 }
 
 
