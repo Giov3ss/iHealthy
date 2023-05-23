@@ -69,7 +69,13 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
 * [Testing](#testing)
 * [Manual Testing](#manual-testing)
 * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
-    * [Code Validation](#code-validation)
+* [Accessibility Testing](#accessibility-testing)
+    * [Accessibility Audits](#accessibility-audits)
+* [Validation Testing](#validation-testing)
+    * [CSS Validation](#css-validation)
+    * [HTML validation](#html-validation)
+    * [JavaScript Validation](#javascript-validation)
+    * [Python Validation](#python-validation)
 * [Bugs and Fixes](#bugs-and-fixes)
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
@@ -406,3 +412,9 @@ The choices in the table are base on the browser market share data provided by [
 - Firefox: 2.77%
 - Samsung Internet: 2.59%
 - Opera: 2.39%
+
+## Accessibility Testing 
+### Accessibility Audits
+
+## Validation Testing
+### CSS Validation
