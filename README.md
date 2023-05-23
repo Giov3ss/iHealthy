@@ -415,6 +415,63 @@ The choices in the table are base on the browser market share data provided by [
 
 ## Accessibility Testing 
 ### Accessibility Audits
+- Desktop
+- ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/189e1601-2de2-4265-9d92-2b239a62b0ee)
+
+- Mobile 
+- ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ea1401f5-38e1-4e25-a502-88af9c7e1d26)
+
+I notice that I got a 97 with a false positive on a contrast issue around the "Book Now" button. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility.
 
 ## Validation Testing
 ### CSS Validation
+- i-style.css
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/96e7e589-9b83-47b4-a49f-bfbb1d84eba1)
+
+### HTML validation
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ccf3af92-43db-4fcc-a8f6-ae56f47fa5b7)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/158a679c-bbd9-4e10-9f89-d8564a925e52)
+
+### JavaScript Validation
+- Appointments.JS
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/de0647cf-c70f-4887-b327-80be6ddc01b7)
+
+- messages.JS
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/7ea444de-33cd-493c-9f8b-756f5277c6b7)
+
+### Python Validation
+- appointments.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8d1b474e-77ce-4f06-bcfd-22c0a2bedd5a)
+
+- homepage.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/822d3e5f-cad1-4330-8117-3b0ad6f02394)
+
+- admin.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/cb4edf0e-2793-4f2f-ab7e-600af1b9e4d7)
+
+- apps.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/fa2e5e57-48f3-48be-b0e5-81608167e178)
+
+- forms.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/62b0b269-9774-4fb7-96c3-d6b697304df0)
+
+- models.py 
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/2a1fbf32-fe0b-49f0-8345-a6916d3c46b8)
+
+- urls.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/c56f69c4-c89e-4ad3-97ba-239a4b1bcffb)
+
+- settings.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/209a7205-297f-4dae-b618-e03ea8dc8916)
+
+- urls.py (iHealthy folder)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9b3a1c3f-5851-4b4e-8f2a-a416d0fcd3ed)
+
+- wsgi.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/bd9008bd-e424-46e5-a86b-fcb4302377e5)
+
+- manage.py
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8d0c7a10-d568-4cca-a58a-f8b4d7a2bdcb)
+
+
+
