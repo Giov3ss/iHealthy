@@ -77,6 +77,9 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
     * [JavaScript Validation](#javascript-validation)
     * [Python Validation](#python-validation)
 * [Defects](#defects)
+* [Defects of Note](#defects-of-note)
+* [Outstanding Defects](#outstanding-defects)
+* [Technologies Used](#technologies-used)
 * [Bugs and Fixes](#bugs-and-fixes)
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
@@ -489,3 +492,32 @@ Resolving this issue required careful analysis of the code logic and understandi
 - **Integration of Timepicker Functionality:**
 Integrating the timepicker functionality into the appointment form proved to be a time-consuming and complex task. Configuring the timepicker library, ensuring it functioned correctly and synchronizing with other components required careful consideration of dependencies, script placements and compatibility issues.
 - Issue [link](https://github.com/Giov3ss/iHealthy/issues/41)
+
+## Outstanding Defects
+Users with slow network connections may experience a delay in image loading, resulting in a slower website performance affecting the overall user experience. This issue is primarily dependent on network conditions and the user's internt speed. 
+
+## Technologies Used
+Several technologies have been used to enable this website works:
+| Technology               | Description                                                                                                                                          |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Django                   | Django is the framework that has been used in the project, enables efficient development, database interactions and secure authentication.           |
+| Python                   | Python is the core programming language that was used to write all of the code in this application, to make it fully functional.                     |
+| JavaScript               | JavaScript was used to provide dynamic interactivity to the messages and enhancing the functionality of the  timepicker.                             |
+| Bootstrap                | Bootstrap was utilized to ensure a responsive design.                                                                                                |
+| Git                      | Git was utilized as the version control system for tracking changes, and maintaining the project's codebase.                                         |
+| PostgreSQL               | PostgreSQL was employed as the relational database management system to store and manage the project's data.                                         |
+| GitHub                   | Github was used as development environment, code management and tracking of changes.                                                                 |
+| Font Awesome             | Font Awesome was used to obtain the icons of the website, enhancing the overall design.                                                              |
+| Google Developer Tools   | DevTools was the primary toll for bug detection, testing the responsiveness and resolving issues across the website.                                 |
+| Heroku                   | Heroku was used to deploy the website.                                                                                                               |
+| CI's pep8                | CI's pep8 tool was used to validate all the python code.                                                                                             |
+| Jigsaw                   | Jigsaw was used to validate CSS code.                                                                                                                |
+| W3 HTML                  | W3 HTML was used to validate HTML code.                                                                                                              |
+| Jshint                   | Jshint was used to validate JavaScript Code.                                                                                                         |
+| Coloors                  | Coloors was utilized to generate color palette for the website design.                                                                               |
+| Cloudinary               | Cloudinary was utilized to store all of my static files and images.                                                                                  |
+| Lighthouse               | Lighthouse was used to test the accessibility of the website.                                                                                        |
+| Balsamiq                 | Balsamiq was utilized as a tool for creating wireframes, providing a visual representation of the website layout and structure.                      |
+| AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
+| Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format.                                                                 |
+| Gitpod                   | Gitpod was used to write and edit the project code.                                                                                                  |
