@@ -76,6 +76,7 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
     * [HTML validation](#html-validation)
     * [JavaScript Validation](#javascript-validation)
     * [Python Validation](#python-validation)
+* [Defects](#defects)
 * [Bugs and Fixes](#bugs-and-fixes)
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
@@ -473,5 +474,18 @@ I notice that I got a 97 with a false positive on a contrast issue around the "B
 - manage.py
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/8d0c7a10-d568-4cca-a58a-f8b4d7a2bdcb)
 
+## Defects
+**DEFECTS** were documented in github using a custom issue template. 
+I created a milestone to group all defects together so they'd be easier to manage.
+- Here is my [DEFECT Template](https://github.com/Giov3ss/iHealthy/issues/new?assignees=&labels=&projects=&template=bug-report.md&title=DEFECT%3A+%3Ctitle%3E)
+- Here is my [DEFECT Milestone](https://github.com/Giov3ss/iHealthy/milestones)
 
+## Defects of Note
+- **Issue with Conflict Dates, time and Nutritionist:**
+One of the significant defects that posed a challenge was related to conflicts in appointment scheduling. Users were able to schedule appointments even if there was a conflicting appointment already booked for the same date, time and nutritionist. 
+Resolving this issue required careful analysis of the code logic and understanding the data flow within the system, it took several debugging sessions to identify the root cause and devise an appropriate solution.
+- Issue [link](https://github.com/Giov3ss/iHealthy/issues/39)
 
+- **Integration of Timepicker Functionality:**
+Integrating the timepicker functionality into the appointment form proved to be a time-consuming and complex task. Configuring the timepicker library, ensuring it functioned correctly and synchronizing with other components required careful consideration of dependencies, script placements and compatibility issues.
+- Issue [link](https://github.com/Giov3ss/iHealthy/issues/41)
