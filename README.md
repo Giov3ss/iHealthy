@@ -347,11 +347,11 @@ The create feature allows users to schedule a new appointment with a nutritionis
 - The 403 Page is displayed when a user tries to access a page or resource for which they do not have the necessary permissions. It provides a user-friendly message indicating that the access is forbidden, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 ### 404 Page
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/aa78af4b-24a3-4f6d-b6dd-663437e6946a)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/c30aa744-06a2-4105-9b22-f4e2245a0fa8)
 - The 404 Page is displayed when a user tries to acces a page or resource that does not exist. It provides a user-friendly message indicating that the requested page could not be found, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 ### 500 Page
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9246b099-5729-493b-b904-c9aa7d7dccb6)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/fe9515e9-cb65-41df-bf85-281207dfab70)
 - The 500 Page is displayed when an internal server error occurs, indicating that there was an issue with the server that prevented it from fulfilling the request. It provides a user-friendly message acknowledging error, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 
