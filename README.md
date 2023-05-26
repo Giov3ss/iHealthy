@@ -88,7 +88,7 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
     * [Prerequisites](#prerequisites)
     * [Forking the Github Repository](#forking-the-github-repository)
     * [Making a Local Clone](#making-a-local-clone)
-    * [Deployment to Heroku](#dployment-to-heroku)
+    * [Production Deployment](#production-deployment)
 * [Credits](#credtis)
 </details>
 <hr>
@@ -574,7 +574,7 @@ To run this project, you need a CLOUDINARY_URL:
 - Once you have obtained the API Key and Secret URL, you need to set them as environmental variables in your development environment.
 - Depending on your operating system and development environment, the steps to set environmental variable may vary.
 
-### To Fork the Repository 
+### Forking the Github Repository
 
 To make a copy or ‘fork’ the repository:
 
@@ -582,11 +582,36 @@ To make a copy or ‘fork’ the repository:
 2. Navigate to [my repository](https://github.com/Giov3ss/iHealthy)
 3. In the top right corner of the page, click 'fork' option to create and copy of the original
 
-### To create a Local Clone 
+### Making a Local Clone
 
-1. under the repository name, click on the ‘code’ tab
-2. in the clone box, HTTPS tab, click on the clipboard icon 
-3. in your IED open GitBash
+1. Under the repository name, click on the ‘code’ tab
+2. In the clone box, HTTPS tab, click on the clipboard icon 
+3. In your IED open GitBash
 4. Changed the current working directory to the location you want the cloned directory to be made
 5. Type ‘git clone’ and then paste the URL copied from GitHub
-6. press enter and the local clone will be created 
+6. Press enter and the local clone will be created 
+
+### Production Deployment
+
+To get started with local development in GitPod or your preferred IDE, follow these steps:
+
+1. Install the GitPod Chrome extension from the Chrome Web Store.
+- [GitPod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki)
+
+2. Once the extension is installed, navigate to your forked repository on GitHub.
+3. Click on the green "GitPod" button to open the repository in GitPod.
+4. After the workspace is created, you can start the development process.
+5. Install the Python packages by running the following command in the terminal:
+- **pip3 install -r requirements.txt**
+6. Create an **'env.py** file in the project's root directory to store your environment variables.
+7. In the **'env.py** file, add the following variables, but make sure not to disclose real values:
+- **SECRET_KEY=<YOUR_VALUE>**
+- **CLOUDINARY_URL=<YOUR_VALUE>**
+- **DATABASE_URL=<YOUR_VALUE>**
+8. Apply databse migrations to set up the database by running the following command:
+- **python3 manage.py migrate**
+9. Create a superuser account that allows you add and inspect data via Django admin by running the following command:
+- **python3 manage.py createsuperuser**
+10. Start the server by running the following command:
+- **python3 manage.py runserver**
+11. Now you can access the application by opening the provided URL in your browser.
