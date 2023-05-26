@@ -10,3 +10,4 @@ urlpatterns = [
     path('update/<int:pk>', appointments.update, name='appointment_update'),
     path('delete/<int:pk>', appointments.delete, name='appointment_delete'),
 ]
+

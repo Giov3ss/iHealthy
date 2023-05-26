@@ -68,18 +68,18 @@ def error_404_view(request, exception):
     """
     Displays 404.html path
     """
-    return render(request, '404.html')
+    return render(request, '404.html', status=404)
 
 
 def handler500(request, *args, **argv):
     """
     Displays 500.html path
     """
-    return render(request, '500.html')
+    return render(request, '500.html', status=500)
 
 
 def handler403(request, *args, **argv):
     """
     Displays 403.html path
     """
-    return render(request, '403.html')
+    return render(request, '403.html', status=403)
