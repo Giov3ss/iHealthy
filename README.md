@@ -80,11 +80,10 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
 * [Defects of Note](#defects-of-note)
 * [Outstanding Defects](#outstanding-defects)
 * [Technologies Used](#technologies-used)
-* [Bugs and Fixes](#bugs-and-fixes)
-    * [Fixed Bugs](#fixed-bugs)
-    * [Unfixed Bugs](#unfixed-bugs)
+    * [Languages](#languages)
+    * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 * [Deployment](#deployment)
-    * [Github & Gitpod](#github-&-gitpod)
+    * [Prerequisites](#prerequisites)
     * [Forking the Github Repository](#forking-the-github-repository)
     * [Making a Local Clone](#making-a-local-clone)
     * [Deployment to Heroku](#dployment-to-heroku)
@@ -521,3 +520,62 @@ Several technologies have been used to enable this website works:
 | AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
 | Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format.                                                                 |
 | Gitpod                   | Gitpod was used to write and edit the project code.                                                                                                  |
+
+### Languages
+- HTML
+- CSS
+- Python
+- JavaScript 
+
+### Frameworks, Libraries & Programs Used
+- Django
+- Bootstrap
+- Git 
+- PostgreSQL
+- GitHub
+- Font Awesome
+- Google Developer Tools
+- Heroku
+- CI's pep8
+- W3 HTML
+- Jshint
+- Coloors
+- Cloudinary
+- Lighthouse
+- Balsamiq
+- AmIResponsive
+- Markdown Table Generator
+- Gitpod
+
+## Deployment
+
+### Prerequisites
+To run this project, you need a CLOUDINARY_URL:
+1. **Cloudinary Account:**
+- Create an account on [Cloudinary](https://cloudinary.com/users/register_by_email) if you don't have one.
+- Access the Cloudinary dashboard.
+2. **Obtain API Key and Secret URL:**
+- In the Cloudinary dashboard, navigate to your account settings.
+- Look for the section related to API credentials or environments variable.
+- Locate the API Key and Secret URL.
+- Copy the API Key and Secret URL, as you will need them to configure the application.
+3. **Set Environmental Variables:**
+- Once you have obtained the API Key and Secret URL, you need to set them as environmental variables in your development environment.
+- Depending on your operating system and development environment, the steps to set environmental variable may vary.
+
+### To Fork the Repository 
+
+To make a copy or ‘fork’ the repository:
+
+1. Login to your own GitHub account
+2. Navigate to [my repository](https://github.com/Giov3ss/iHealthy)
+3. In the top right corner of the page, click 'fork' option to create and copy of the original
+
+### To create a Local Clone 
+
+1. under the repository name, click on the ‘code’ tab
+2. in the clone box, HTTPS tab, click on the clipboard icon 
+3. in your IED open GitBash
+4. Changed the current working directory to the location you want the cloned directory to be made
+5. Type ‘git clone’ and then paste the URL copied from GitHub
+6. press enter and the local clone will be created 
