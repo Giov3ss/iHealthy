@@ -343,6 +343,9 @@ The create feature allows users to schedule a new appointment with a nutritionis
 ### 404 Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/aa78af4b-24a3-4f6d-b6dd-663437e6946a)
 - The 404 Page is displayed when a user tries to acces a page or resource that does not exist. It provides a user-friendly message indicating that the requested page could not be found, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
+### 500 Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9246b099-5729-493b-b904-c9aa7d7dccb6)
+
 
 ## Future Features
 - **Personalized Meal Plans:** Allow users to generate personalized meal plans based on their dietary perferences and goals, this can include, meal suggestion, recipes and shopping list.
