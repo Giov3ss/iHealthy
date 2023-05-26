@@ -90,6 +90,8 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
     * [Making a Local Clone](#making-a-local-clone)
     * [Production Deployment](#production-deployment)
 * [Credits](#credtis)
+* [Media](#media)
+* [Acknowledgments](#acknowledgments)
 </details>
 <hr>
 
@@ -531,6 +533,7 @@ Several technologies have been used to enable this website works:
 | AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
 | Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format.                                                                 |
 | Gitpod                   | Gitpod was used to write and edit the project code.                                                                                                  |
+| Mermaid                  | Mermaid was used to create all the diagrams.                                                                                                         |                                                                                                 |
 
 ### Languages
 - HTML
@@ -557,6 +560,7 @@ Several technologies have been used to enable this website works:
 - AmIResponsive
 - Markdown Table Generator
 - Gitpod
+- Mermaid 
 
 ## Deployment
 
@@ -615,3 +619,45 @@ To get started with local development in GitPod or your preferred IDE, follow th
 10. Start the server by running the following command:
 - **python3 manage.py runserver**
 11. Now you can access the application by opening the provided URL in your browser.
+
+## Credits
+Throughout the process of building the iHealthy website, I would like to acknowledge the following:
+
+**Online Sources:**
+- [Code Institue Template](https://github.com/Code-Institute-Org/python-essentials-template)
+- [Stack Overflow](https://stackoverflow.co/)
+- [Django Documentation](https://docs.djangoproject.com/en/4.2/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+**Modules and Libraries:**
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [JavaScript](https://www.javascript.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)
+- [Timepicker](https://timepicker.co/)
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [Cloudinary](https://cloudinary.com/)
+- [Git](https://git-scm.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Pexels](https://www.pexels.com/)
+- [Markdown Best Practices](https://www.markdownguide.org/basic-syntax/)
+- [Mermaid](https://mermaid.live/)
+
+
+## Media 
+- [Pexels](https://www.pexels.com/) - The Hero Image was taken from Pexels. 
+- [Font Awesome](https://fontawesome.com/) - The icons was taken from Font Awesome.
+
+## Acknowledgments
+
+**Tutorials and Inspiration:**
+- The walkthrough project 'I think Therefore I blog' from Code Institute.
+- The Template for the GUI for this project was provided by [Code Institue Template](https://github.com/Code-Institute-Org/python-essentials-template)
+- Templates from [Bootstrap Examples](https://getbootstrap.com/docs/4.4/examples/) helped me to get an overview of the site and footer specifically.
+
+**Peoples:**
+- Malia - A heartfelt appreciation goes to our mentor from Code Institute, whose guidance and support have been invaluable throughout this project.
+- The Team at Tutor support at Code Insitute - A huge thanks to the team at Tutor Support for their prompt assistance in addressing any bugs and GitPod related issues I encountered along the way. 
+- Gustavo Chahm - Special thanks to Gustavo Chahm for his valuable contributions in testing the application and providing insightful feedback, which greatly contributed to improving the overall quality and user experience.
