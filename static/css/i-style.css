@@ -24,7 +24,7 @@ body {
 
 .main-bg {
     background-color: #F9FAFC;
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 196px);
 }
 
 .card {
