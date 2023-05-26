@@ -64,7 +64,9 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
         * [Appointment Deleted Sucessfully Message](#appointment-deleted-sucessfully-message)
         * [Conflicts Date/Time/Nutritionist Appointments Message](#conflicts-datetimenutritionist-appointments-message)
         * [Admin Panel/Superuser](#admin-panel-superuser)
+    * [403 Page](#403-page)
     * [404 Page](#404-page)
+    * [500 Page](#500-page)
 * [Future Features](#future-features)
 * [Testing](#testing)
 * [Manual Testing](#manual-testing)
@@ -339,14 +341,18 @@ The create feature allows users to schedule a new appointment with a nutritionis
 ### Admin Panel/ Superuser 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9e78bb95-87fe-4126-aa86-1783b9961e4e)
 - On the Admin Panel, as an admin/superuser I have full access to CRUD functionality so I can view, create, edit and delete the appointments or users. 
+
 ### 403 Page 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/cc564011-718a-47bb-865c-ae855fd46467)
+- The 403 Page is displayed when a user tries to access a page or resource for which they do not have the necessary permissions. It provides a user-friendly message indicating that the access is forbidden, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 ### 404 Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/aa78af4b-24a3-4f6d-b6dd-663437e6946a)
 - The 404 Page is displayed when a user tries to acces a page or resource that does not exist. It provides a user-friendly message indicating that the requested page could not be found, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
+
 ### 500 Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/9246b099-5729-493b-b904-c9aa7d7dccb6)
+- The 500 Page is displayed when an internal server error occurs, indicating that there was an issue with the server that prevented it from fulfilling the request. It provides a user-friendly message acknowledging error, along with suggestions with a link on click "Here" to help the user navigate back to a valid page.
 
 
 ## Future Features
