@@ -274,6 +274,7 @@ By focusing on these core features, the MVP will provide users with the ability 
 
 ### Appointment List
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/731326d8-7fe1-45f3-ac4d-7908b01c4a92)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/63ccff7e-c0a6-4085-b75b-1c306af892f0)
 - The Appointment list page presents a list of all the appointments schedule by the user. It provides a brief overview of each appointment, incluiding details like date, time and nutritionist name. Users can view, update or delete appointments from this page just clicking in the icons on the right of the details. 
 
 ### Create Appointment
