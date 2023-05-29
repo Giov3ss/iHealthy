@@ -168,38 +168,38 @@ I used PostgreSQL as the database for this project. Hosting the application on H
 - 'time' (TimeField): The time of the appointment.
 - 'reason' (CharField with choices): The reason for the appointment.
 Valid choices include:
- - Weight Loss
- - Weight Gain
- - Better Healthy
- - Meal Planning
- - Nutrition Education
- - Other
+  - Weight Loss
+  - Weight Gain
+  - Better Healthy
+  - Meal Planning
+  - Nutrition Education
+  - Other
 - 'nutritionist' (CharField with choices): The assigned nutritionist for the appointment.
 Valid choices include:
- - Anna Smith
- - John Doe
+  - Anna Smith
+  - John Doe
 
 #### Validation:
-- 'user': Required field, as it represents the user associated with the appointment.
-- 'date': No specific validation. 
-- 'time': No specific validation. 
+- 'user': Required field, as it represents the user associated with the appointment, is also auto associated based on the user being logged in, you cannot create an appointment unless your are logged in.
+- 'date': The form widget doesn't allow the user pick past dates and only gives 30 days of dates to pick from.
+- 'time': The time interval is set by the javascript to only allow appointments for 1 hour starting at 10:00am - 18:00pm.
 - 'reason': Required field, with predefined choices. The default choice is "Weight Loss"
-- 'nutritionist': Required field, with predefined choices. The default choice is "Anna Smith".
+- 'nutritionist': Required field, with predefined choices. The default choice is "Anna Smith". 
+- Once a nutritionist is selected and a date/time submitted, the database of appointments is checked to make sure there is no conflict.
 
 #### CRUD Operations: 
-- Create: An appointment is created when a user schedules a new appointment. The user selects the date, time, reason and nutritionist from the available options.
+- Create: An appointment is created when a user schedules a new appointment. The user selects the date, time, reason and nutritionist from the available options. A user must be logged in to create an appointment. A custom clean function was built on the Appointment Form to make sure there is not an existing appointment for the nutritionist at the given time. The form also makes sure the date isn't in the past in the event that the user tries to hack data being set.
 
 - Read: The appointments table is read when displaying the user's scheduled appointments. The appointments are retrieved based on the user's ID.
 
-- Update: Appointments can be updated when a user reschedules an existing appointment. The user can modify the date, time, reason and nutritionist for the appointment.
+- Update: Appointments can be updated when a user reschedules an existing appointment. The user can modify the date, time, reason and nutritionist for the appointment. Like create, conflicts are checked to make sure the user isn't double booking the nutritionist unless it's the appointment they are updating. There is also a check that the user can only update their own appointments.
 
-- Delete: Appointments can be deleted if a user cancels their scheduled appointment.
+- Delete: Appointments can be deleted if a user cancels their scheduled appointment. User can only delete appointments they have created, not another user's appointment, if they try to hack the url with a different id. 
 
 ### CRUD Diagrams
 ![mermaid-diagram-2023-05-15-220416](https://github.com/Giov3ss/iHealthy/assets/112728772/91a9b38f-6666-4b76-ba3e-5438fae99e01)
 
 ## Agile Process
-
 ### Project Goals
 The purpose of the iHealthy website is to provide a convenient platform for users to schedule appointments with nutritionist. The website aims to steamline the process of connecting users with qualified professionals to receive personalized nutrition guidance and support.
 
@@ -253,6 +253,7 @@ By focusing on these core features, the MVP will provide users with the ability 
 ### Agile Tool
 #### User Story Template
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/b20ffaac-2629-4f1c-85ce-ba27b8ebfbc1)
+- [Agile Tool](https://github.com/users/Giov3ss/projects/3)
 
 ## Features
 ### Home Page
@@ -261,7 +262,7 @@ By focusing on these core features, the MVP will provide users with the ability 
 
 ### Sign Up Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/30b3eca1-be14-4f12-a1c1-1d4f1fba4126)
-- The sign-up page allows new users to create an account on the iHealthy website. User can provide their personal information, such as name, email address (optional) and password, to register abd gain full access to the platform's features.
+- The sign-up page allows new users to create an account on the iHealthy website. User can provide their personal information, such as name, email address (optional) and password, to register abd gain full access to the platform's features. During the registration process, the user is required to provide a unique user ID. The system ensures that the user ID is not repeated, thereby maintaining uniqueness among all registered users, In addition, the system checks whether the password is strong and warns you if the password is too short or too common. This ensures that users choose a strong and secure password.
 
 ### Login Page
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/df298fc9-a080-4edf-a658-7d67b55b468b)
