@@ -275,11 +275,15 @@ By focusing on these core features, the MVP will provide users with the ability 
 ### Appointment List
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/731326d8-7fe1-45f3-ac4d-7908b01c4a92)
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/63ccff7e-c0a6-4085-b75b-1c306af892f0)
-- The Appointment list page presents a list of all the appointments schedule by the user. It provides a brief overview of each appointment, incluiding details like date, time and nutritionist name. Users can view, update or delete appointments from this page just clicking in the icons on the right of the details. 
+- The Appointment list page presents a list of all the appointments schedule by the user. It provides a brief overview of each appointment, incluiding details like date, time and nutritionist name. Users can view, update or delete appointments from this page just clicking in the icons on the right of the details, when the user performs actions such as updating, creating or deleting appointments, informative messages are displayed on the Appointment List page. These messages confirm the success of the action and provide a relevant feedback in case of errors or issues.
+- Also if the user doesn't have any appointments scheduled, a special condition is implemented to handle this scenario. A message is displayed on the page to inform the user that there are "No Appointments found.". This ensure clarity and provides guidance on how to proceed, such as "Create Appointment" button.
+
 
 ### Create Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/52a47d93-cba8-420f-8eda-78971366f823)
-The create feature allows users to schedule a new appointment with a nutritionist. Users can select the desired date, time, nutritionist and provide a reason for the appointment. Upon submission, the appointment is added to the user's appointment list. 
+- The create feature allows users to schedule a new appointment with a nutritionist. Users can select the desired date, time, nutritionist and provide a reason for the appointment. Upon submission, the appointment is added to the user's appointment list. If the selected time for the appointment are already booked by another user, a message displayed on the Create Appointment page to inform the user that the choosen slot is not available.
+- To ensure that the appointments are scheduled for future dates, a warning message is displayed on the Create Appointment page if the user selects a past date, as a reminder to choose a valid and future date for the appointment.
+- Access to the Create Appointment page is restricted to authenticated user only. If a user is not logged in, they will be prompted to log in or create an account before being able to access the page.
 
 ### View Appointment Details
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/673020c4-8e3f-45b5-83df-db21e2496b81)
@@ -287,11 +291,14 @@ The create feature allows users to schedule a new appointment with a nutritionis
 
 ### Update Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/04a403b9-c0ed-46ab-9df5-a35bc1a315dc)
-- User can use the update appointment feature to modify the details of an existing appointment. They can change the appointment date, time, nutritionist and reason.
+- User can use the update appointment feature to modify the details of an existing appointment. They can change the appointment date, time, nutritionist and reason. If the selected date, time and nutritionist have already been booked by another user, a message is displayed on the Update Appointment page to inform the user that chosen is not available.
+- To ensure that the appointments are updated for future dates, a warning message is displayed on the Update Appointment page if the user selects a past date, as a reminder to choose a valid and future date for the appointment modification.
+- Access to the Update Appointment page is restricted to authenticated user only. If a user is not logged in, they will be prompted to log in or create an account before being able to access the page. In addition to being logged in, the user must be the owner of the appointment to access the Update Appointment page. This prevents unauthorized user from modifying appointments that do not belong to them and ensures that only the appointment creator can make changes. 
 
 ### Delete Appointment
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ff746b6c-881a-4b14-8dd9-f8d22b43647a)
 - The delete appointment feature allows users to remove an appointment from their schedule. It prompts the user to confirm the deletion before permanently removing the appointment from their list. 
+- Access to the Delete Appointment page is restricted to authenticated user only. If a user is not logged in, they will be prompted to log in or create an account before being able to proceed with the deletion.In addition to being logged in, the user must be the owner of the appointment in order to delete it. This security measure prevents unauthorized deletion of appointments that do not belong to the user. Only the user who created the appointment can access the Delete Appointment page and initiate the deletion process.
 
 ### NavBar 
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/2cd79574-6500-43b4-88fb-33a518a7db08)
@@ -360,6 +367,7 @@ The create feature allows users to schedule a new appointment with a nutritionis
 
 
 ## Future Features
+- **Improved business logic:** Make sure user's can't book themselves twice.
 - **Personalized Meal Plans:** Allow users to generate personalized meal plans based on their dietary perferences and goals, this can include, meal suggestion, recipes and shopping list.
 - **Fitness Tracking:** Integrate fitness tracking capabilities into the platform, allowing users to track their physical actives, set fitness goals and monitor their progress.
 - **Community Forums:** A community where the users can engage discussions, share their experience, ask question and seek advice from nutritionist and fellow users.
