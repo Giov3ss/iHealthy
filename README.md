@@ -383,22 +383,109 @@ To view the detailed testing results, please [CLICK HERE](https://github.com/Gio
 
 ## Manual Testing
 ### Manual Testing Register:
+- [Register](https://github.com/Giov3ss/iHealthy/issues/29)
+- The Sign Up page displays a registration form with required fields.
+- Upon successful submission of the form, a new user account is created.
 - Registering with valid information display a success message.
 - Logging in with the registered username and password display a success message.
+- The user is redirected to the authenticated user's Home page after registration.
 - Registering with an already registered email displays an error message.
 - Registering with invalid information displays relevant error message.
-- Registering without filling in required fiels displays error message indicating the missing fields.
+- In case of invalid inputs or errors, appropriate error messages are displayed to guide the user is correcting the information.
+- User that's logged in gets redirected to home page if they try to use a register bookmark.   
 
 ### Manual Testing Login:
+- [Login](https://github.com/Giov3ss/iHealthy/issues/30)
+- The login page displays a login form with fields for username and password.
 - Logging in with the registered username and password display a success message.
 - Incorrect credential display an error messsage indicating invalid credentials.
 - Leave the username or password field empty display an error message, indicating that fields is required.
+- The user session is managed correctly, allowing the user to access authenticated features and pages without having to log in repeatedly. 
+- User that's logged in gets redirected to home page if they try to use a login bookmark.
 
 ### Manual Testing Create Appointment:
-- Fill all the required fiels such as date, time, reason and nutritionist with valid inputs, the appointment is create successfully and a success message displayed on the screen. 
+- [Create Appointment](https://github.com/Giov3ss/iHealthy/issues/33)
+- Fill all the required fields such as date, time, reason and nutritionist with valid inputs, the appointment is create successfully and a success message displayed on the screen. 
 - Leave any required fields empty an error message appear on the screen.
 - Choose a past date for the appointment and submit the form, an error message is displayed on the screen.
 - Conflicts of dates, times and nutritionist with existing appointments, an error message is displayed on the screen.
+- The created appointment is successfully saved and displayed on the appointment list page with accurate information.  
+- User that's not logged in gets redirected to login page if they try to use a login bookmark.
+
+### Manual Testing View Appointment Details:
+- [View Appointment Details](https://github.com/Giov3ss/iHealthy/issues/34)
+- The appointment details page accurately display all the relevant information of the selected appointment, such as, nutritionist name, reason, date and time.
+- The "Back to appointment list" button is available on the details page and successfully navigates the user back to the appointment list.
+- Users that's logged out gets redirected to home page if they to user bookmark.
+
+### Manual Testing Delete Appointment:
+- [Delete Appointment](https://github.com/Giov3ss/iHealthy/issues/36)
+- The user is redirected to a confirmation page before deleting an appointment.
+- The appointment is successfully deleted from the system when the user chooses "Yes, delete".
+- The user is redirected to the appointment list page after successful deletion.
+- Appropriate success message are displayed to indicate the successful deletion of the appointment,
+- The appointment remains unchanged in the system when the user chooses "No, go back"
+- The user is redirected back to the appointment list page without any changes.
+- Only user that owns a given appointment can delete it.
+- User that's not logged in gets redirected to logi page if they try to user a delete appointment bookmark.
+
+### Manual Testing Appointment List:
+- [Appointment List](https://github.com/Giov3ss/iHealthy/issues/32)
+- The appointment list page successfully retrieves and display the user's appointments.
+- Each appointment is presented with accurate and complete relevant information such as date and time.
+- The Appointment list display buttons for each appointment: View, Update and Delete
+- The user is redirected to the appointment details page for the selected appointment.
+- The Appointment details page display information about the appointment, such as nutritionist, reason, date and time.
+- The appointment update page allows the user to modify the appointment details, such as, nutritionist, reason, date and time.
+- The user can make changes to the appointment and save the updates.
+- The user is prompted to confirm the deletion of the selected appointment.
+- If the user confirms the deletion, the appointment is successfully removed from the list.
+- The user can create new appointments, which are then displayed on the appointment list.
+- Appointments are present with all relevant information for easy reference.
+- User that's not logged in gets redirected to login page if they try to use bookmark to the appointments page.
+- If the user doesn't have any appointments they see a customize message in the screen. 
+
+### Manual Testing Update Appointment: 
+- [Update Appointment](https://github.com/Giov3ss/iHealthy/issues/35)
+- The appointment update form allow the user to edit and update the details of an existing appointment.
+- The updated appointment is successfully saved and reflected in the system.
+- The appointment update page allows the user to modify the appointment details, such as, nutritionist, reason, date and time.
+- The user can make changes to the appointment and save the updates.
+- Validation is performed on the inputs, and appropriate error messages are displayed for invalid or missing information.
+- User that's not logged in gets redirected to login page if they try to use bookmark to the update appointments page.
+
+### Manual Testing Home Page Authenticated User:
+- [Home Page Authenticated User](https://github.com/Giov3ss/iHealthy/issues/31)
+- After logging in, the home page display personalized content, including in the appointment section in the NavBar.
+- Logging out successfully logs the user out and user has no access to authenticated user-specific pages or features.
+- Display of a message on the screen alerting the user that his logout was successful.
+
+### Manual Testing NavBar Authenticated User:
+- [NavBar Authenticated User](https://github.com/Giov3ss/iHealthy/issues/38)
+- The Home link is displayed in the NavBar.
+- The Logout link is displayed in the NavBar.
+- The Appointments link is displayed in the NavBar.
+- Navigation links in the NavBar correctly redirect to the intended pages.
+- Clicking in the Home link redirect to the home page.
+- Clicking on the Logout link, the user is logged out and a message is displayed on the screen alerting the user that he/she has successfully logged out.
+- Clicking on the appointments link the user is redirect to the appointments list page.
+- The menu in the NavBar functions properly on different devices.
+- The NavBar is responsive and accessible on different screen sizes.
+
+### Manual Testing NavBar Unauthenticated User:
+- [NavBar Unauthenticated User](https://github.com/Giov3ss/iHealthy/issues/37)
+- The Home link is displayed in the NavBar.
+- The Register link is displayed in the NavBar.
+- The Login link is displayed in the NavBar.
+- Navigation links in the NavBar correctly redirect to the intended pages.
+- The menu in the NavBar functions properly on different devices.
+- The NavBar is responsive and accessible on different screen sizes.
+
+### Manual Testing Home Page and Welcome Message:
+- [Home Page and Welcome Message](https://github.com/Giov3ss/iHealthy/issues/28)
+- Hero image is displayed prominently on the Home page.
+- The welcome message is visible and prominently states "Welcome to iHealthy".
+- The "Book Now" button is functional and redirects the user to the appropriate registration or login page.
 
 ## Compatibility and Responsive Testing
 
