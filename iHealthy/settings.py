@@ -13,10 +13,10 @@ import os
 import dj_database_url
 import django_heroku
 from pathlib import Path
-DEBUG = False
 if os.path.isfile('env.py'):
     import env
-    DEBUG = True
+
+DEBUG = False
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -59,7 +59,6 @@ ACCOUNT_SIGNUP_URL = '/accounts/signup/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
-CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -151,7 +150,7 @@ CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-lils09d
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
