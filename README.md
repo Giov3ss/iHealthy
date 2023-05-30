@@ -528,13 +528,71 @@ The choices in the table are base on the browser market share data provided by [
 
 ## Accessibility Testing 
 ### Accessibility Audits
+#### Home Page
 - Desktop
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/189e1601-2de2-4265-9d92-2b239a62b0ee)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/3eb05fb3-c71e-4822-894b-f313f57986f2)
 
 - Mobile 
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ea1401f5-38e1-4e25-a502-88af9c7e1d26)
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/794d6988-e3bd-4366-b80c-a256acfca9c9)
 
-I notice that I got a 97 with a false positive on a contrast issue around the "Book Now" button. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility.
+#### Register
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/4da6e6a3-526f-4ad0-9265-cced7e98bb11)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/670fa490-3fef-4d28-90b4-0dbebb2241b4)
+
+#### Login
+- Desktop 
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/6b283cdb-2a71-4438-81a5-6ce286715fa0)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/6e1540d8-69f6-415f-adf7-2b2b9d794caa)
+
+#### Appointment List
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/04150bc3-1c34-48e8-b04e-85b0f47718b3)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/040c48fc-e3fa-4b39-baea-836bf1882b0e)
+
+#### Appointment Detail
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/4f1afb86-d5fd-43f2-81cb-00ce68b5afc1)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/01070f3a-14be-4a2e-9779-d918dee93930)
+
+#### Appointment Update
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/b376a435-45bd-4271-af9a-f8e08222fc88)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/67bc72d0-3ee2-4a2c-91c4-9396f3a76734)
+
+#### Appointment Delete
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/75b57996-e54f-48a0-8a3d-d76aad8ab516)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/7c89fa4a-e9d8-4995-8a2b-ddc8676af212)
+
+#### Logout Page
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/26f1f9b6-6170-4eef-9561-36048dc4483a)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/db0210c6-be4d-4a11-ab2e-1c97bf48a9c0)
+
+#### Home Page - Authenticade User
+- Desktop
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/75608ebe-8769-47ba-8da4-692648480ba0)
+
+- Mobile
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/14395cd8-342a-4c82-be52-03f95ba68935)
+
+**False positive on a contrast issue**
+I notice that I got a 97 with a false positive on a contrast issue around the buttons. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility.
 
 ## Validation Testing
 ### CSS Validation
