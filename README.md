@@ -584,7 +584,7 @@ The choices in the table are base on the browser market share data provided by [
 - Mobile
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/db0210c6-be4d-4a11-ab2e-1c97bf48a9c0)
 
-#### Home Page - Authenticade User
+#### Home Page - Authenticated User
 - Desktop
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/75608ebe-8769-47ba-8da4-692648480ba0)
 
