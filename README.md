@@ -600,8 +600,29 @@ I notice that I got a 97 with a false positive on a contrast issue around the bu
 ![image](https://github.com/Giov3ss/iHealthy/assets/112728772/96e7e589-9b83-47b4-a49f-bfbb1d84eba1)
 
 ### HTML validation
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/ccf3af92-43db-4fcc-a8f6-ae56f47fa5b7)
-![image](https://github.com/Giov3ss/iHealthy/assets/112728772/158a679c-bbd9-4e10-9f89-d8564a925e52)
+- Home Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/2215e9e2-1b7d-4235-942b-6480a93cf727)
+
+- Register Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/f964f5b5-f478-4081-b5bf-71dc3de37f5b)
+
+- Login Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/adb74e69-97da-4bdc-9432-2749398490ba)
+
+- Appointment List Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/5c607dab-3f6f-466e-a645-b1861d648e7e)
+
+- Appointment Detail Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/567c6287-d462-4003-86fd-09070595b048)
+
+- Appointment Update Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/c852cdc2-765d-4b01-be5f-bea4c6f24e37)
+
+- Appointment Delete Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/204e5fc7-e3d8-41ff-b28e-041b11e0ce7a)
+
+- Logout Page
+![image](https://github.com/Giov3ss/iHealthy/assets/112728772/cb896172-00ff-40ca-be92-aa67614fdfdf)
 
 ### JavaScript Validation
 - Appointments.JS
