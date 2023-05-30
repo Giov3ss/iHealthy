@@ -14,14 +14,14 @@
                 {{ appointment }}
 
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <a class="btn btn-outline-primary" href="{% url 'appointment_detail' pk=appointment.pk %}">
-                        <i class="fa-regular fa-calendar"></i>
+                    <a class="btn btn-outline-primary" href="{% url 'appointment_detail' pk=appointment.pk %}" aria-label="View the appointment details icon">
+                        <i class="far fa-calendar"></i>
                     </a>
-                    <a class="btn btn-outline-secondary" href="{% url 'appointment_update' pk=appointment.pk %}">
-                        <i class="fa-regular fa-pen-to-square"></i>
+                    <a class="btn btn-outline-secondary" href="{% url 'appointment_update' pk=appointment.pk %}" aria-label="Update appointment button-icon">
+                        <i class="far fa-edit"></i>
                     </a>
-                    <a class="btn btn-outline-danger" href="{% url 'appointment_delete' pk=appointment.pk %}">
-                        <i class="fa-regular fa-trash-can"></i>
+                    <a class="btn btn-outline-danger" href="{% url 'appointment_delete' pk=appointment.pk %}" aria-label="Delete appointment button-icon">
+                        <i class="far fa-trash-alt"></i>
                     </a>
                 </div>
             </li>

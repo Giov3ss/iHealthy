@@ -89,8 +89,9 @@ body {
 }
 
 .link {
-    color: #23BBBB;
+    color: #0d6efd;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link:hover,

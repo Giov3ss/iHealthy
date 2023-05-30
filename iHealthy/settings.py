@@ -16,7 +16,7 @@ from pathlib import Path
 if os.path.isfile('env.py'):
     import env
 
-DEBUG = False
+DEBUG = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -141,16 +141,16 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-lils09d1q86.ws-eu97.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['ihealthy.herokuapp.com', 'localhost', '8000-giov3ss-ihealthy-b116dy4f6b9.ws-eu98.gitpod.io']  # noqa
 
-CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-lils09d1q86.ws-eu97.gitpod.io']  # noqa
+CSRF_TRUSTED_ORIGINS = ['ihealthy.herokuapp.com', '8000-giov3ss-ihealthy-b116dy4f6b9.ws-eu98.gitpod.io']  # noqa
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
