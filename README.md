@@ -89,6 +89,7 @@ This project is built using Django framework, along with PostgreSQL, Python, HTM
     * [Forking the Github Repository](#forking-the-github-repository)
     * [Making a Local Clone](#making-a-local-clone)
     * [Production Deployment](#production-deployment)
+    * [Running From GitPod or your preferred IDE](#running-from-gitpod-or-your-preferred-ide)
 * [Credits](#credtis)
 * [Media](#media)
 * [Acknowledgments](#acknowledgments)
