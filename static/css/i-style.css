@@ -89,7 +89,7 @@ body {
 }
 
 .link {
-    color: #0d6efd;
+    color: black !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -140,5 +140,12 @@ a:hover {
     }
   }
 
-
+@media screen and  (max-width: 767px) {
+    .container-wrapper .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
