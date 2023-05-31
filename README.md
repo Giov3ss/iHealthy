@@ -682,7 +682,8 @@ Integrating the timepicker functionality into the appointment form proved to be 
 - Issue [link](https://github.com/Giov3ss/iHealthy/issues/41)
 
 ## Outstanding Defects
-Users with slow network connections may experience a delay in image loading, resulting in a slower website performance affecting the overall user experience. This issue is primarily dependent on network conditions and the user's internt speed. 
+- Currently, the system allows a user to book appointments at the same time with different nutritionists. Although this is not a common scenario, it can lead to confusion. In future updates, it would be beneficial to implement logic that prevents users from booking the same time slot with multiple nutritionists. 
+- Users with slow network connections may experience a delay in image loading, resulting in a slower website performance affecting the overall user experience. This issue is primarily dependent on network conditions and the user's internt speed. 
 
 ## Technologies Used
 Several technologies have been used to enable this website works:
@@ -741,7 +742,7 @@ Several technologies have been used to enable this website works:
 ## Deployment
 
 ### Prerequisites
-To run this project, you need a CLOUDINARY_URL:
+To run this project, you need a CLOUDINARY_URL & ElephantSQL:
 1. **Cloudinary Account:**
 - Create an account on [Cloudinary](https://cloudinary.com/users/register_by_email) if you don't have one.
 - Access the Cloudinary dashboard.
@@ -753,6 +754,26 @@ To run this project, you need a CLOUDINARY_URL:
 3. **Set Environmental Variables:**
 - Once you have obtained the API Key and Secret URL, you need to set them as environmental variables in your development environment.
 - Depending on your operating system and development environment, the steps to set environmental variable may vary.
+
+1. **ElephantSQL Database:**
+- Visit the [ElephantSQL](https://www.elephantsql.com/) website.
+- Sign up fpr an account if you don't have one.
+- After signing in, you will be redirected to the ElephantSQL dashboard.
+- Click on "Create New Instance" to create a new PostgreSQL database instance.
+- Choose a suitable plan for your needs.
+- Configure the database settings, such as the region and database name.
+- Click on "Create" to create the database instance.
+- Once the instance is created, you will see the details of your database, including the hostname, port, username and password.
+2. **Retrieve the Database URL:**
+- In the ElephantSQL dashboard, locate your newly created database instance.
+- Click on the instance to view its details.
+- In the "Details" tab, you will find the connection details for your database, including the URL.
+3. **Set Environmental Variables:**
+- After obtaining the database URL, you need to set it as an environmental variable in your development environment.
+- The specific steps to set environmental variables depend on your operating system and development environment.
+- In general, you can set the environmental variable by adding the following line to your **'env.py** file or the environment configuration of your development enviroment:
+**DATABASE_URL=<YOUR_DATABASE_URL>**
+- Replace **"<YOUR_DATABASE_URL>"** with the actual database URL you obtained from ElephantSQL.
 
 ### Forking the Github Repository
 
