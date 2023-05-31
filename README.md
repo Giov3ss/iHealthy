@@ -793,7 +793,34 @@ To make a copy or ‘fork’ the repository:
 6. Press enter and the local clone will be created 
 
 ### Production Deployment
+To deploy your application on Heroku, follow the steps bellow:
+1. **Create a Heroku Account:**
+- Visit the [Heroku](https://signup.heroku.com/login) website.
+- Sign up for a free account or log in if you already have one.
+2. **Create a New Heroku App:**
+- Once you are logged in to your Heroku account, click on the "New" button and select "Create new app".
+- Choose a unique name for your app. This name will be used in the App's URL.
+- Select the region closest to your location for better performance.
+3. **Connect the App to Your Git Repository:**
+- After creating the app, go to the "Deploy" tab in your app's dashboard.
+- Choose the deployment method based on your Git repository: (e.g. GitHub).
+- Connect your app to the appropriate repository and branch.
+4. **Configure Environment Variables:**
+- In the "Settings" tab of your heroku app's dashboard, locate the "Config Vars" section.
+- Set the necessary enviroment variables required for your aplication: (e.g DATABASE_URL, CLODINARY_URL).
+- Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
+5. **Deploy the Application:**
+- In the "Deploy" tab, scroll down to the "Manual Deploy" section.
+- Click on the "Deploy Branch" button to deploy your application.
+- Heroku will start building and deploying your application based on the code from your connected Git repository.
+6. **Monitor the Deployment:**
+- Once the deployment process is complete, you can view the deployment logs to ensure everything is working correctly.
+- In the "Activity" tab, you will find the deployment logs, which can help you identify any issues or errors that may have occured during the deployment process.
+7. **Access Your Deployed Application:**
+- After a successful deployment, you can access your application by visiting the URL provided in your Heroku app's dashboard.
+- Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
+### Running From GitPod or your preferred IDE:
 To get started with local development in GitPod or your preferred IDE, follow these steps:
 
 1. Install the GitPod Chrome extension from the Chrome Web Store.
