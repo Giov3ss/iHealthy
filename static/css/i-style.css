@@ -105,6 +105,12 @@ body {
     text-decoration: underline;
 }
 
+.errors-link {
+    color: black !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* FOOTER STYLING */
 
 a {
