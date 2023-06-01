@@ -6,10 +6,12 @@
 
 {% load static %} 
 
+<!-- WELCOME MESSAGE -->
 <div class="container-fluid bg-image">
     <h1 class="font-weight-semibold">Welcome to iHealthy.</h1>
 </div>
 
+<!-- MAIN CONTENT -->
 <div class="container text-center mt-4">
     <p class="lead text-center font-weight-normal">Your go-to destination for personalized and evidence-based nutrition counseling.</p>
     <p class="lead text-center">Whether you're looking to lose weight, weight gain, manage a chronic condition or optimize
@@ -19,6 +21,7 @@
     </p>
     <p class="lead text-center">Book your appointment today and start your jorney towards a happier and healthier you!
     </p>
+    <!-- BOOK NOW/ CREATE APPOINTMENT BUTTONS -->
     <div>
         {% if request.user.is_authenticated %}
         <a href="{% url 'appointment_create' %}" class="btn btn-primary">Create appointment</a>
@@ -28,9 +31,11 @@
     </div>
 </div>
 
+
 <div class="container pt-5 pb-5 mt-4 border-top text-center">
     <div class="row mt-3">
         <div class="col-12 col-lg-6">
+            <!-- WHY CHOOSE US SECTION -->
             <h2>Why Choose Us?</h2>
             <p class="pt-3"><i class="fa-solid fa-check"></i> Personalized Nutrition Plan</p>
             <p><i class="fa-solid fa-check"></i> Professional Nutricionist</p>
@@ -40,6 +45,7 @@
             <p><i class="fa-solid fa-check"></i> User-Friendly Platform</p>
         </div>
         <div class="col-12 col-lg-6">
+            <!-- WHAT WE OFFER SECTION -->
             <h2>What We Offer:</h2>
             <p class="pt-3"><i class="fa-solid fa-weight-scale"></i>  Weight Loss</p>
             <p><i class="fa-solid fa-chart-line"></i > Weight Gain</p>
@@ -50,7 +56,7 @@
     </div>
 </div>
 
-
+<!-- MEET OUR TEAM SECTION -->
 <div class="container pt-3 pb-5 mt-4 border-top text-center clearfix"> 
     <h3 class="text-center mb-5">Meet Our Team <i class="fa-solid fa-people-group"></i> </h3>
     <div class="row">
@@ -58,6 +64,7 @@
             <div class="card" style="width: 20rem;">
                     <img src="{% static 'images/annasmith.png' %}" class="card-img-top" alt="Picture of Anna Smith, our nutritionist">
                 <div class="card-body">
+                    <!-- ANNA SMITH (NUTRITIONIST) -->
                     <h4 class="card-title">Anna Smith</h4>
                     <p class="card-text text-left pt-3">
                         As a highly experienced nutritionist, Anna Smith has dedicated her career to helping individuals
@@ -79,6 +86,7 @@
             <div class="card"  style="width: 20rem;">
                     <img src="{% static 'images/johndoe.png' %}" class="card-img-top" alt="Picture of John Doe, our nutritionist">
                 <div class="card-body">
+                    <!-- JOHN DOE (NUTRITIONIST) -->
                     <h4 class="card-title">John Doe</h4>
                     <p class="card-text pt-3">
                         As a registered dietitian and nutritionist with 10 years of experience, John Doe is committed to helping people achieve optimal health through sustainable lifestyle changes. 

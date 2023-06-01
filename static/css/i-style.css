@@ -1,3 +1,4 @@
+/* NAVIGATION CSS ADJUSTMENTS TO OVERRIDE BOOTSTRAP COLORS AND FONTS */
 body {
     background-color: #F9FAFC;
 }
@@ -12,6 +13,8 @@ body {
 .thin {
     font-weight: 300;
 }
+
+/* HOME PAGE BACKGROUND */
 
 .light-bg {
     background-color: #ffffff;
@@ -56,6 +59,7 @@ body {
     line-height: 1.5;
 }
 
+/* BUTTONS COLORS */
 .btn-primary {
     background-color: #007bff;
     border-color: #fff;
@@ -88,6 +92,7 @@ body {
     color: #23BBBB;
 }
 
+/* LINK'S COLORS */
 .link {
     color: black !important;
     text-decoration: none;
@@ -100,7 +105,7 @@ body {
     text-decoration: underline;
 }
 
-/* footer */
+/* FOOTER STYLING */
 
 a {
     color: inherit;
@@ -119,13 +124,13 @@ a:hover {
     gap: 10px;
 }
 
-
-/* media queries */
+/* MEDIA QUERIES */
 @media screen and (max-width: 685px){ 
     h1 {
         display: table-caption;
 
     }
+    /* Media query for small devices like phones */
 }
 
 @media screen and (max-width: 845px) {
@@ -138,6 +143,7 @@ a:hover {
       margin-bottom: 1rem;
       width: 90%;
     }
+    /* Media query for tablets and smaller devices */
   }
 
 @media screen and  (max-width: 767px) {
@@ -147,5 +153,6 @@ a:hover {
         align-items: center;
         text-align: center;
     }
+    /* Media query for phones */
 }
 
