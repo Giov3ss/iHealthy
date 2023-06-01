@@ -25,6 +25,7 @@ urlpatterns = [
 
 ]
 
+
 handler403 = 'appointments.views.appointments.handler403'
 handler404 = 'appointments.views.appointments.error_404_view'
 handler500 = 'appointments.views.appointments.handler500'

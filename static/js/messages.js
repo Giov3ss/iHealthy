@@ -5,5 +5,5 @@ let messageAlerts = document.querySelectorAll('.alert');
 messageAlerts.forEach(function (alert) {
     setTimeout(function () {
         alert.remove();
-    }, timeoutDuration)
-})
+    }, timeoutDuration);
+});
